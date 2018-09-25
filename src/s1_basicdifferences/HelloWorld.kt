@@ -1,5 +1,7 @@
 package s1_basicdifferences
 
+typealias EmployeeSet = Set<Employee>
+
 fun main(args: Array<String>) {
     println("Hello World")
 
@@ -28,6 +30,9 @@ fun main(args: Array<String>) {
     }
 
     // number4 = "dsg" // Cannot change type on the fly.
+
+    // Using a typealias.
+    val employees: EmployeeSet
 
 }
 
