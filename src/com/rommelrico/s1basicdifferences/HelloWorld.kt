@@ -51,10 +51,14 @@ fun main(args: Array<String>) {
     val e2 = Employee("John", 2)
     val e3 = Employee("John", 2)
 
+    // '==' in Kotlin is the same as '.equals', i.e. Structural equality.
+    // To check for Referential equality in Kotlin, use '==='.
     println(e1 == e2) // false
     println(e2 == e3) // true
-    println(e1.equals(e2)) // false
-    println(e2.equals(e3)) // true
+    println(e1.equals(e2)) // false (and redundant)
+    println(e2.equals(e3)) // true (and redundant)
+    println(e1 === e2) // false
+    println(e2 === e3) // false
 
 }
 
