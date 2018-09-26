@@ -34,9 +34,18 @@ fun main(args: Array<String>) {
     // Using a typealias.
     val employees: EmployeeSet
 
+    // Arrays
     val names = arrayListOf("John", "Jane", "Mary")
     println(names[1])
 
+    // Ternary operator doesn't exist in Kotlin. Replaced with "if" statement.
+
+    // C-style for loop doesn't exist in Kotlin.
+
+    // Kotlin doesn't have a static keyword but it still has the static concept.
+
+    // Kotlin doesn't have a new keyword.
+    
 }
 
 class Employee(var name: String, val id: Int) {
