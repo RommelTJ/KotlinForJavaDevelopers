@@ -46,8 +46,30 @@ fun main(args: Array<String>) {
 
     // Kotlin doesn't have a new keyword.
 
+
+    val e1 = Employee("Mary", 1)
+    val e2 = Employee("John", 2)
+    val e3 = Employee("John", 2)
+
+    println(e1 == e2) // false
+    println(e2 == e3) // true
+    println(e1.equals(e2)) // false
+    println(e2.equals(e3)) // true
+
 }
 
 class Employee(var name: String, val id: Int) {
+
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as Employee
+
+        if (name != other.name) return false
+        if (id != other.id) return false
+
+        return true
+    }
 
 }
