@@ -1,4 +1,4 @@
-package s1_basicdifferences
+package com.rommelrico.s1basicdifferences
 
 typealias EmployeeSet = Set<Employee>
 
@@ -45,7 +45,7 @@ fun main(args: Array<String>) {
     // Kotlin doesn't have a static keyword but it still has the static concept.
 
     // Kotlin doesn't have a new keyword.
-    
+
 }
 
 class Employee(var name: String, val id: Int) {
