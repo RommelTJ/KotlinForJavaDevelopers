@@ -60,6 +60,15 @@ fun main(args: Array<String>) {
     println(e1 === e2) // false
     println(e2 === e3) // false
 
+    val e4 = e2
+    println(e4 === e2) // true
+    
+    // Negations
+    println(e4 !== e2) // false
+    println(e4 != e2) // false
+    println(e2 != e3) // false
+    println(e2 !== e3) // true
+
 }
 
 class Employee(var name: String, val id: Int) {
