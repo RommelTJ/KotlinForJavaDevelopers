@@ -34,6 +34,9 @@ fun main(args: Array<String>) {
     // Using a typealias.
     val employees: EmployeeSet
 
+    val names = arrayListOf("John", "Jane", "Mary")
+    println(names[1])
+
 }
 
 class Employee(var name: String, val id: Int) {
