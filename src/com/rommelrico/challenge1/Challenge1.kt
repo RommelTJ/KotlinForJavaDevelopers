@@ -14,4 +14,11 @@ fun main(args: Array<String>) {
     if (y is String) {
         println(y.toUpperCase())
     }
+
+    println("""
+        *    1
+        *   11
+        *  111
+        * 1111
+        """.trimMargin("*"))
 }
