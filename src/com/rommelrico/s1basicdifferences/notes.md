@@ -12,3 +12,7 @@ application, you have to distribute the `Kotlin runtime library` and the `JRE`. 
 
 Automatically imports "living essentials" at runtime. This is why it's required.
 For more information: https://kotlinlang.org/api/latest/jvm/stdlib/
+
+### Kotlin REPL
+
+Tools > Kotlin > Kotlin REPL
