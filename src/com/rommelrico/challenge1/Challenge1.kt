@@ -9,4 +9,9 @@ fun main(args: Array<String>) {
     println(hello1 == hello2)
 
     var x = 2988
+
+    val y: Any = "The Any type is the root of the Kotlin class hierarchy."
+    if (y is String) {
+        println(y.toUpperCase())
+    }
 }
