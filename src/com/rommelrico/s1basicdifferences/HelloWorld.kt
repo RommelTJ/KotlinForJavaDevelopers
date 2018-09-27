@@ -69,6 +69,22 @@ fun main(args: Array<String>) {
     println(e2 != e3) // false
     println(e2 !== e3) // true
 
+    // Bit Operators are spelled out
+    val x = 0x00101101
+    val y = 0x10011100
+    var z = x and y
+    z = x xor y
+
+    // Casting in Kotlin and checking typeOf
+    val something: Any = e4
+    if (something is Employee) { // smart casting
+        // println("Is Employee")
+        // val newEmployee = something as Employee // cast in Kotlin
+        // println(newEmployee.name)
+
+        println(something.name) // taking advantage of smart casting
+    }
+
 }
 
 class Employee(var name: String, val id: Int) {
