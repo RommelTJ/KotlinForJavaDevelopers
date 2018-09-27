@@ -85,6 +85,15 @@ fun main(args: Array<String>) {
         println(something.name) // taking advantage of smart casting
     }
 
+    // String templates
+    val change = 4.22
+    println("You owe me $change in \$change")
+    val numerator = 10.99
+    val denominator = 20.00
+    println("The value of $numerator divided by $denominator is ${numerator/denominator}")
+
+    println("The employee's id is ${e1.id}")
+
 }
 
 class Employee(var name: String, val id: Int) {
@@ -99,6 +108,10 @@ class Employee(var name: String, val id: Int) {
         if (id != other.id) return false
 
         return true
+    }
+
+    override fun toString(): String {
+        return "Employee(name='$name', id=$id)" // String templates
     }
 
 }
