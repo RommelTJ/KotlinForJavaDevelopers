@@ -1,5 +1,9 @@
+# Mac
+.DS_Store
+
 # IntelliJ
 .idea/**
+out/
 
 # Compiled class file
 *.class
