@@ -94,6 +94,18 @@ fun main(args: Array<String>) {
 
     println("The employee's id is ${e1.id}")
 
+    // Raw strings or triple quoted strings
+    // val filePath = "C:\\somedir\\somedir2"
+    val filePath = """C:\somedir\somedir2"""
+    val eggName = "Humpty Dumpty"
+    val nurseryRhyme = """
+        $eggName sat on a wall
+        $eggName had a great fall
+        All the kings horses and all the kings men
+        Couldn't put $eggName together again.
+    """.trimIndent()
+    println(nurseryRhyme)
+
 }
 
 class Employee(var name: String, val id: Int) {
