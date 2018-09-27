@@ -7,4 +7,6 @@ fun main(args: Array<String>) {
     println(hello1 === hello2)
 
     println(hello1 == hello2)
+
+    var x = 2988
 }
