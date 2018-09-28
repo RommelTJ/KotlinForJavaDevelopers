@@ -30,4 +30,9 @@ fun main(args: Array<String>) {
     // Non-null assertion.
     //println(str!!.toUpperCase()) // Throws: Exception in thread "main" kotlin.KotlinNullPointerException
 
+    val str4 = str!! // Throws: Exception in thread "main" kotlin.KotlinNullPointerException
+    val str5 = str4.toUpperCase() // This doesn't even run in Kotlin.
+    // Not a good idea to string non-null assertion operators because they will blow up on you and you won't know
+    // which variable caused the issue.
+    
 }
