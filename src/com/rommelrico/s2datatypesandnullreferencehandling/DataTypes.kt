@@ -86,5 +86,8 @@ fun main(args: Array<String>) {
     val myIntArray2 = intArrayOf(1, 2, 3)
     // DummyClass().printNumbers(myIntArray) // can't do this
     DummyClass().printNumbers(myIntArray2)
+
+    // this is ok because it's a primitive type and they're initialized to default values.
+    var someOtherArray = IntArray(5)
     
 }
