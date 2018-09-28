@@ -89,5 +89,11 @@ fun main(args: Array<String>) {
 
     // this is ok because it's a primitive type and they're initialized to default values.
     var someOtherArray = IntArray(5)
-    
+
+    // Converting Kotlin Array to Primitive type array
+    DummyClass().printNumbers(evenNumbers.toIntArray())
+
+    // To convert primitive type array to Kotlin Array
+    val convertedIntArray: Array<Int> = myIntArray2.toTypedArray()
+
 }
