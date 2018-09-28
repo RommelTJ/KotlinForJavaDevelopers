@@ -81,4 +81,10 @@ fun main(args: Array<String>) {
     for (element in mixedArray) {
         println(element)
     }
+
+    val myIntArray = arrayOf(1, 2, 3)
+    val myIntArray2 = intArrayOf(1, 2, 3)
+    // DummyClass().printNumbers(myIntArray) // can't do this
+    DummyClass().printNumbers(myIntArray2)
+    
 }
