@@ -34,5 +34,9 @@ fun main(args: Array<String>) {
     val str5 = str4.toUpperCase() // This doesn't even run in Kotlin.
     // Not a good idea to string non-null assertion operators because they will blow up on you and you won't know
     // which variable caused the issue.
-    
+
+}
+
+fun printText(text: String) {
+    println(text)
 }
