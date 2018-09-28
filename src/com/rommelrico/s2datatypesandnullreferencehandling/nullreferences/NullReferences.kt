@@ -17,4 +17,14 @@ fun main(args: Array<String>) {
     val str2 = str?: "This is default value"
     println(str)
     println(str2)
+
+    // We can rewrite our imaginary example as follows to get a default:
+    // val countryCode: String = bankBranch?.address?.country?.countryCode ?: "US"
+
+    // 'as?' shorthand for smart-casting in Kotlin
+    val something: Any = arrayOf(1, 2, 3, 4)
+    val str3 = something as? String
+    println(str3) // null, instead of ClassCastException
+    println(str3?.toUpperCase()) // null, instead of ClassCastException
+    
 }
