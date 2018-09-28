@@ -42,6 +42,11 @@ fun main(args: Array<String>) {
     // Better to use the 'let' function. Short-hand for 'if (str6 != null) { printText(str6) }`
     str6?.let { printText(it) }
 
+    // In Kotlin, equals operator is a safe operator, so the below is safe.
+    val str7: String? = null
+    val anotherString = "This isn't nullable."
+    println(str7 == anotherString) // Structural equality. Prints 'false'.
+
 }
 
 fun printText(text: String) {
