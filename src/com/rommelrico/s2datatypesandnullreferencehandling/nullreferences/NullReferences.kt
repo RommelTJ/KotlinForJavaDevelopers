@@ -9,4 +9,6 @@ fun main(args: Array<String>) {
     // Even if str is null, we don't get NullPointerException. If null, evaluate to null instead of blowing up.
     // In other words, 'if (str == null) { null }`.
 
+    // If one of the items in the chain is null, it short-circuits to null. See verbose example in NullReferences.java.
+    // val countryCode: String? = bankBranch?.address?.country?.countryCode
 }
