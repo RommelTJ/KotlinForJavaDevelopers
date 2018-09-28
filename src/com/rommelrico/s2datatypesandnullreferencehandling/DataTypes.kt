@@ -1,5 +1,7 @@
 package com.rommelrico.s2datatypesandnullreferencehandling
 
+import com.rommelrico.s2datatypesandnullreferencehandling.javacode.DummyClass
+
 fun main(args: Array<String>) {
     val myInt = 10
     var myLong = 22L
@@ -31,6 +33,10 @@ fun main(args: Array<String>) {
     println(char2) // prints 'A'
 
     val myBoolean: Boolean = true
+
+    val vacationTime = false
+    val onVacation = DummyClass().isVacationTime(vacationTime)
+    println(onVacation)
 
 
 }
