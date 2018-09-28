@@ -1,6 +1,7 @@
 package com.rommelrico.s2datatypesandnullreferencehandling
 
 import com.rommelrico.s2datatypesandnullreferencehandling.javacode.DummyClass
+import java.math.BigDecimal
 
 fun main(args: Array<String>) {
     val myInt = 10
@@ -43,5 +44,41 @@ fun main(args: Array<String>) {
     // Nothing class is a subclass of every class.
     // Nothing is used when you know a function will never return.
 
+    // Arrays
 
+    // 1 way is if you know the type in advance
+    val names = arrayOf("John", "Jane", "Joe")
+    // Another way is if you specify type
+    val longs: Array<Long> = arrayOf(1, 2, 3)
+    val longs2 = arrayOf(1L, 2L, 3L)
+    val longs4 = arrayOf<Long>(1, 2, 3)
+
+    println(longs[2]) // prints 3
+
+    // Lambda expression in initializer
+    val evenNumbers = Array(16) { i -> i * 2 }
+    for (number in evenNumbers) {
+        println(number)
+    }
+
+    val lotsOfNumbers = Array(100000) { i -> i + 1 }
+    val allZeroes = Array(100) { i -> 0 }
+    val allZeroes2 = Array(100) { 0 }
+
+    var someArray: Array<Int>
+    someArray = arrayOf(1, 2, 3, 4)
+    for (number in someArray) {
+        println(number)
+    }
+
+    someArray = Array(6) { i -> (i+1) * 10 }
+    for (number in someArray) {
+        println(number)
+    }
+
+    // You can mix datatypes in an array
+    val mixedArray = arrayOf("hello", 22, BigDecimal(10.5), 'a')
+    for (element in mixedArray) {
+        println(element)
+    }
 }
