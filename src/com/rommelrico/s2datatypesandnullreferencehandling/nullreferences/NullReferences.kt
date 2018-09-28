@@ -4,5 +4,9 @@ fun main(args: Array<String>) {
     // val str: String = null // Can't do this. Null cannot be a value of non-null type String
     val str: String? = "This isn't null" // This is ok.
     // str.toUpperCase() // can't do this because non-safe calls are not allowed.
+    // Safe-call operator = '?', is short-hand for 'if (str != null) { }'
     println(str?.toUpperCase())
+    // Even if str is null, we don't get NullPointerException. If null, evaluate to null instead of blowing up.
+    // In other words, 'if (str == null) { null }`.
+
 }
