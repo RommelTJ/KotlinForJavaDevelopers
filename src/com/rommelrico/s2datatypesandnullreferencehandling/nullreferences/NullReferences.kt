@@ -26,5 +26,8 @@ fun main(args: Array<String>) {
     val str3 = something as? String
     println(str3) // null, instead of ClassCastException
     println(str3?.toUpperCase()) // null, instead of ClassCastException
-    
+
+    // Non-null assertion.
+    //println(str!!.toUpperCase()) // Throws: Exception in thread "main" kotlin.KotlinNullPointerException
+
 }
