@@ -1,4 +1,4 @@
-package com.rommelrico.challenge1
+package com.rommelrico.s1basicdifferences.challenge1
 
 fun main(args: Array<String>) {
     val hello1 = "Hello"
