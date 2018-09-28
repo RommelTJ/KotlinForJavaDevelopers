@@ -38,5 +38,10 @@ fun main(args: Array<String>) {
     val onVacation = DummyClass().isVacationTime(vacationTime)
     println(onVacation)
 
+    val anything: Any
+    // Unit is the same as void in Java
+    // Nothing class is a subclass of every class.
+    // Nothing is used when you know a function will never return.
+
 
 }
