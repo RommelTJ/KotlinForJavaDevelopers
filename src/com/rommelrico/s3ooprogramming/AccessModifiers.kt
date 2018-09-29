@@ -7,6 +7,10 @@ fun main(args: Array<String>) {
 
     val m = Employee()
     println(m)
+
+    // Module is a group of files that are compiled together; Maven or Gradle.
+    // Internal is visible inside the module.
+    
 }
 
 private class Employee
