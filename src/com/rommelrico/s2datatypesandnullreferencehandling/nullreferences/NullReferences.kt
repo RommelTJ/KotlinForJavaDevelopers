@@ -47,6 +47,14 @@ fun main(args: Array<String>) {
     val anotherString = "This isn't nullable."
     println(str7 == anotherString) // Structural equality. Prints 'false'.
 
+
+    // Arrays and Null References
+    val nullableInts = arrayOfNulls<Int?>(5)
+    for (i in nullableInts) {
+        println(i)
+    }
+    // nullableInts[3] // Most methods will be unavailable since Nulls can't be used safely.
+
 }
 
 fun printText(text: String) {
