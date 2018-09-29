@@ -10,7 +10,12 @@ fun main(args: Array<String>) {
 
     // Module is a group of files that are compiled together; Maven or Gradle.
     // Internal is visible inside the module.
-    
+
+    // Top-level access modifiers: private, protected, public, and internal.
+    // Public = Visible everywhere
+    // Private = Visible within the same file.
+    // Protected = Can't be used.
+    // Internal = Visible within the same modules.
 }
 
 private class Employee
