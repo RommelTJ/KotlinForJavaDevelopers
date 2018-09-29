@@ -16,6 +16,8 @@ fun main(args: Array<String>) {
     // Private = Visible within the same file.
     // Protected = Can't be used.
     // Internal = Visible within the same modules.
+
+    // In Kotlin, classes can't see private members belonging to inner classes
 }
 
 private class Employee
