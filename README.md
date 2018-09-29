@@ -1,6 +1,6 @@
 # KotlinForJavaDevelopers
 
-Version: 0.0.2 - 23 Sep 2018
+Version: 0.0.3 - 28 Sep 2018
 
 ## Description
 
