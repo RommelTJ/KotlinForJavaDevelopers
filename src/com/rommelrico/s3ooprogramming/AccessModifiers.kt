@@ -34,9 +34,15 @@ class Employee constructor(firstName: String) {
 }
 */
 
+/*
 // Shorter way
 class Employee constructor(firstName: String) {
 
     val firstName: String = firstName
 
 }
+*/
+
+// Third shortest way
+class Employee(val firstName: String)
+
