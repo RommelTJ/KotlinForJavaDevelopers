@@ -5,8 +5,8 @@ fun main(args: Array<String>) {
     // In Kotlin, private top-level items mean everything in same file can access
     // In Kotlin, no matching requirement between Class names and filenames.
 
-    val m = Employee()
-    println(m)
+    val m = Employee("John")
+    println(m.firstName)
 
     // Module is a group of files that are compiled together; Maven or Gradle.
     // Internal is visible inside the module.
