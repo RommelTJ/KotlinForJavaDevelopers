@@ -20,4 +20,12 @@ fun main(args: Array<String>) {
     // In Kotlin, classes can't see private members belonging to inner classes
 }
 
-private class Employee
+class Employee constructor(firstName: String) {
+
+    val firstName: String
+
+    init {
+        this.firstName = firstName
+    }
+
+}

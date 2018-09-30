@@ -7,5 +7,5 @@ public class JavaEmployee {
     public JavaEmployee(String firstName) {
         this.firstName = firstName;
     }
-    
+
 }
