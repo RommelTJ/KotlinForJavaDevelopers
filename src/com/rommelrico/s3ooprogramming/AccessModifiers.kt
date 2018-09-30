@@ -20,6 +20,7 @@ fun main(args: Array<String>) {
     // In Kotlin, classes can't see private members belonging to inner classes
 }
 
+/*
 // Kotlin has the concept of primary constructor, and it is declared before the curly braces.
 class Employee constructor(firstName: String) {
 
@@ -29,5 +30,13 @@ class Employee constructor(firstName: String) {
     init {
         this.firstName = firstName
     }
+
+}
+*/
+
+// Shorter way
+class Employee constructor(firstName: String) {
+
+    val firstName: String = firstName
 
 }
