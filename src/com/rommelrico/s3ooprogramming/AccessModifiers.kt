@@ -7,6 +7,10 @@ fun main(args: Array<String>) {
 
     val m = Employee("John")
     println(m.firstName)
+    println(m.fullTime)
+    m.fullTime = false
+    println(m.firstName)
+    println(m.fullTime)
 
     // Module is a group of files that are compiled together; Maven or Gradle.
     // Internal is visible inside the module.
@@ -44,5 +48,4 @@ class Employee constructor(firstName: String) {
 */
 
 // Third shortest way
-class Employee(val firstName: String)
-
+class Employee(val firstName: String, var fullTime: Boolean = true)
