@@ -7,6 +7,8 @@ fun main(args: Array<String>) {
 
     val m = Employee("John")
     println(m.firstName)
+    println(m.fullTime) // under the covers this is calling a getter/setter.
+    m.fullTime = false
     println(m.fullTime)
 
     var n = Employee("Jane", false)
@@ -49,4 +51,26 @@ class Employee constructor(firstName: String) {
 */
 
 // Third shortest way
-class Employee(val firstName: String, val fullTime: Boolean = true)
+// class Employee(val firstName: String, val fullTime: Boolean = true)
+// Kotlin is creating default setters/getters for us.
+// In Kotlin, if you declare a variable as private, there is no way to access it from the outside. This is different
+// than how Java does it.
+// In Kotlin, getters/setters have to have same or less permissive accessor than the property it's modifying.
+// There's no point in setting a property private to prevent it from being directly modified, so it's not necessary.
+
+// This is how you create a more advanced getter/setter.
+class Employee(val firstName: String, fullTime: Boolean = true) {
+    var fullTime = fullTime
+
+    // Using a backing field to refer to a custom getter/setter. Backing field gets generated only if needed.
+    get() {
+        println("Running custom get.")
+        return field // This is a backing field.
+    }
+
+    set(value) {
+        println("Running custom set")
+        field = value
+    }
+
+}
