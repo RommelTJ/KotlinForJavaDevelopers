@@ -5,7 +5,9 @@ val MY_CONSTANT = 100
 fun main(args: Array<String>) {
 
     val car = Car("Blue", "Toyota", 2015)
+    val car2 = Car("Blue", "Toyota", 2015)
     println(car)
+    println(car == car2)
 
     println(MY_CONSTANT)
 
