@@ -16,6 +16,13 @@ fun main(args: Array<String>): Unit {
     val manyCars = arrayOf(car1, car2, car3)
     printColors(*manyCars)
 
+    val moreCars = arrayOf(car2, car3)
+    val car4 = car2.copy()
+    val lotsOfCars: Array<Car> = arrayOf(*manyCars, *moreCars, car4)
+    for (car in lotsOfCars) {
+        println(car)
+    }
+
 }
 
 // Can only use one vararg per function, and should typically be listed at the end.
