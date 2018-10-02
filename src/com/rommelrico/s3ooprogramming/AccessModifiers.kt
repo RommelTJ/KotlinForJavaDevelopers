@@ -11,7 +11,7 @@ fun main(args: Array<String>) {
 
     val car3 = car.copy()
     println(car3)
-    val car4 = car.copy(year = 2016)
+    val car4 = car.copy(year = 2016, color = "Green")
     println(car4)
 
     println(MY_CONSTANT)
