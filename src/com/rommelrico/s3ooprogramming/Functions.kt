@@ -11,12 +11,15 @@ fun main(args: Array<String>): Unit {
     var car2 = Car("Red", "Ford", 2017)
     var car3 = Car("Green", "Honda", 2016)
 
-    printColors(car1, car2, car3, str = "Test")
+    printColors(car1, car2, car3)
+
+    val manyCars = arrayOf(car1, car2, car3)
+    printColors(*manyCars)
 
 }
 
-// Can only use one vararg per function, and should typically be listed at the end. 
-fun printColors(vararg cars: Car, str: String) {
+// Can only use one vararg per function, and should typically be listed at the end.
+fun printColors(vararg cars: Car) {
     for (car in cars) {
         println(car.color)
     }
