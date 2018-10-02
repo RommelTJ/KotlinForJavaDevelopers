@@ -5,6 +5,7 @@ fun main(args: Array<String>): Unit {
     val e1 = Employee2("John")
     println(e1.upperCaseFirstName())
     println(labelMultiply(5, 4))
+    println(labelMultiply(label = "Here's the result: ", operand2 = 2, operand1 = 4))
 }
 
 /*
