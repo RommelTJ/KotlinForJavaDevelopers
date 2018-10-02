@@ -9,6 +9,9 @@ fun main(args: Array<String>) {
     println(car)
     println(car == car2)
 
+    val car3 = car.copy()
+    println(car3)
+
     println(MY_CONSTANT)
 
     // Top level items are public by default in Kotlin (vs package-private)
