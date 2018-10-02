@@ -4,6 +4,7 @@ fun main(args: Array<String>): Unit {
     println(labelMultiply(5, 4, "The result is: "))
     val e1 = Employee2("John")
     println(e1.upperCaseFirstName())
+    println(labelMultiply(5, 4))
 }
 
 /*
@@ -13,7 +14,7 @@ fun labelMultiply(operand1: Int, operand2: Int, label: String): String {
 */
 
 // Shorter way
-fun labelMultiply(operand1: Int, operand2: Int, label: String): String = "$label ${operand1 * operand2}"
+fun labelMultiply(operand1: Int, operand2: Int, label: String = "The answer is: "): String = "$label ${operand1 * operand2}"
 
 class Employee2(val firstName: String) {
     fun upperCaseFirstName() = firstName.toUpperCase()
