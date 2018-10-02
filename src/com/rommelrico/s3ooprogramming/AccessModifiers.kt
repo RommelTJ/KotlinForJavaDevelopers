@@ -81,8 +81,10 @@ class Employee(val firstName: String, fullTime: Boolean = true) {
 }
 
 // Data Classes come with "free" toString, equals and Hashcodes, and copy functions.
+// Primary constructors requires at least one parameter and must be val or var.
+// Data Classes can't be abstract, sealed, or inner classes.
 data class Car(val color: String, val model: String, val year: Int) {
 
-    
+
 
 }
