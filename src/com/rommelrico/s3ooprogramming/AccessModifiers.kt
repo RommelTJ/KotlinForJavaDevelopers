@@ -79,3 +79,10 @@ class Employee(val firstName: String, fullTime: Boolean = true) {
     }
 
 }
+
+// Data Classes come with "free" toString, equals and Hashcodes, and copy functions.
+data class Car(val color: String, val model: String, val year: Int) {
+
+    
+
+}
