@@ -4,6 +4,9 @@ val MY_CONSTANT = 100
 
 fun main(args: Array<String>) {
 
+    val car = Car("Blue", "Toyota", 2015)
+    println(car)
+
     println(MY_CONSTANT)
 
     // Top level items are public by default in Kotlin (vs package-private)
