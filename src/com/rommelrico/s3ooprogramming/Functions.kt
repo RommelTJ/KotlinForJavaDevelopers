@@ -6,6 +6,20 @@ fun main(args: Array<String>): Unit {
     println(e1.upperCaseFirstName())
     println(labelMultiply(5, 4))
     println(labelMultiply(label = "Here's the result: ", operand2 = 2, operand1 = 4))
+
+    var car1 = Car("Blue", "Subaru", 2018)
+    var car2 = Car("Red", "Ford", 2017)
+    var car3 = Car("Green", "Honda", 2016)
+
+    printColors(car1, car2, car3, str = "Test")
+
+}
+
+// Can only use one vararg per function, and should typically be listed at the end. 
+fun printColors(vararg cars: Car, str: String) {
+    for (car in cars) {
+        println(car.color)
+    }
 }
 
 /*
