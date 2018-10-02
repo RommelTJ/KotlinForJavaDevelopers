@@ -3,6 +3,9 @@ package com.rommelrico.s3ooprogramming
 val MY_CONSTANT = 100
 
 fun main(args: Array<String>) {
+
+    println(MY_CONSTANT)
+
     // Top level items are public by default in Kotlin (vs package-private)
     // In Kotlin, private top-level items mean everything in same file can access
     // In Kotlin, no matching requirement between Class names and filenames.
