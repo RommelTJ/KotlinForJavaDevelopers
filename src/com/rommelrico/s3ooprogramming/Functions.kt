@@ -22,6 +22,8 @@ fun main(args: Array<String>): Unit {
     for (car in lotsOfCars) {
         println(car)
     }
+    
+    println(Utils().upperFirstAndLast("this is all in lower case"))
 
 }
 
