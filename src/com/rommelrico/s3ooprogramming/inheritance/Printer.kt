@@ -44,6 +44,9 @@ class SomethingElse: Something {
     }
 }
 
+// Data Classes cannot be extended or abstract or inner. They can extend from other classes.
+data class DataClass(val number: Int) { }
+
 fun main(args: Array<String>) {
     val laserPrinter = LaserPrinter("Brother", 12)
     laserPrinter.printModel()
