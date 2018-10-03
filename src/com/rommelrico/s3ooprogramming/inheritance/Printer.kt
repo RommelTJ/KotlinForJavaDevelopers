@@ -14,14 +14,17 @@ abstract class Printer(val modelName: String) {
 open class LaserPrinter(modelName: String): Printer(modelName) {
 
     // Requires 'override' keyword and base function to be 'open'.
-    override fun printModel() = println("The model name of this laser printer is: $modelName")
+    final override fun printModel() = println("The model name of this laser printer is: $modelName")
 
     override fun bestSellingPrice(): Double = 129.99
 
 }
 
 class SpecialLaserPrinter(modelName: String): LaserPrinter(modelName) {
-    
+
+    // Cannot do this because we explicitly declare it as 'final' in LaserPrinter class
+    // override fun printModel() = println("This is my way of doing it.")
+
 }
 
 fun main(args: Array<String>) {
