@@ -20,7 +20,7 @@ open class LaserPrinter(modelName: String, ppm: Int): Printer(modelName) {
 
 }
 
-class SpecialLaserPrinter(modelName: String): LaserPrinter(modelName) {
+class SpecialLaserPrinter(modelName: String, ppm: Int): LaserPrinter(modelName, ppm) {
 
     // Cannot do this because we explicitly declare it as 'final' in LaserPrinter class
     // override fun printModel() = println("This is my way of doing it.")
