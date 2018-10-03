@@ -5,11 +5,19 @@ package com.rommelrico.s3ooprogramming.inheritance
 // have to be extended.
 abstract class Printer(val modelName: String) {
     open fun printModel() = println("The model name of this printer is: $modelName")
+
+    // 'abstract' functions are open by default.
+    abstract fun bestSellingPrice(): Double
+
 }
 
 class LaserPrinter(modelName: String): Printer(modelName) {
+
     // Requires 'override' keyword and base function to be 'open'.
     override fun printModel() = println("The model name of this laser printer is: $modelName")
+
+    override fun bestSellingPrice(): Double = 129.99
+
 }
 
 fun main(args: Array<String>) {
