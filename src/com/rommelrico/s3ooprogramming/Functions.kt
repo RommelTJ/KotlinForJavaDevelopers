@@ -2,7 +2,7 @@ package com.rommelrico.s3ooprogramming
 
 fun String.upperFirstAndLast(): String {
     val upperFirst = substring(0, 1).toUpperCase() + substring(1)
-    return upperFirst.substring(0, upperFirst.length - 1)+
+    return upperFirst.substring(0, upperFirst.length - 1) +
             upperFirst.substring(upperFirst.length - 1, upperFirst.length).toUpperCase()
 }
 
@@ -53,3 +53,7 @@ fun labelMultiply(operand1: Int, operand2: Int, label: String = "The answer is: 
 class Employee2(val firstName: String) {
     fun upperCaseFirstName() = firstName.toUpperCase()
 }
+
+// Inline functions are substituted by their body when it benefits the application. This can happen if you don't
+// declare it with the 'inline' keyword.
+inline fun labelMultiplyInlined(operand1: Int, operand2: Int, label: String = "The answer is: "): String = "$label ${operand1 * operand2}"
