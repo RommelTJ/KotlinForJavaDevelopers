@@ -1,4 +1,11 @@
 package com.rommelrico.s3ooprogramming.inheritance
 
-class Printer {
+// To tell compiler that this class can be extended we add 'open'
+open class Printer {
+}
+
+class LaserPrinter: Printer {
+
+    constructor(): super()
+
 }
