@@ -1,5 +1,11 @@
 package com.rommelrico.s3ooprogramming
 
+fun String.upperFirstAndLast(): String {
+    val upperFirst = this.substring(0, 1).toUpperCase() + this.substring(1)
+    return upperFirst.substring(0, upperFirst.length - 1)+
+            upperFirst.substring(upperFirst.length - 1, upperFirst.length).toUpperCase()
+}
+
 fun main(args: Array<String>): Unit {
     println(labelMultiply(5, 4, "The result is: "))
     val e1 = Employee2("John")
@@ -22,8 +28,9 @@ fun main(args: Array<String>): Unit {
     for (car in lotsOfCars) {
         println(car)
     }
-    
+
     println(Utils().upperFirstAndLast("this is all in lower case"))
+    println("yeah is also in lower case".upperFirstAndLast())
 
 }
 
