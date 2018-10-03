@@ -11,7 +11,7 @@ abstract class Printer(val modelName: String) {
 
 }
 
-open class LaserPrinter(modelName: String): Printer(modelName) {
+open class LaserPrinter(modelName: String, ppm: Int): Printer(modelName) {
 
     // Requires 'override' keyword and base function to be 'open'.
     final override fun printModel() = println("The model name of this laser printer is: $modelName")
@@ -28,6 +28,6 @@ class SpecialLaserPrinter(modelName: String): LaserPrinter(modelName) {
 }
 
 fun main(args: Array<String>) {
-    val laserPrinter = LaserPrinter("Brother")
+    val laserPrinter = LaserPrinter("Brother", 12)
     laserPrinter.printModel()
 }
