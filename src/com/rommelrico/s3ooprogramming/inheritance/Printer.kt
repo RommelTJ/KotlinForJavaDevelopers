@@ -27,6 +27,14 @@ class SpecialLaserPrinter(modelName: String, ppm: Int): LaserPrinter(modelName, 
 
 }
 
+open class Something {
+    val someProperty: String
+    constructor(someParameter: String) {
+        someProperty = someParameter
+    }
+}
+
+
 fun main(args: Array<String>) {
     val laserPrinter = LaserPrinter("Brother", 12)
     laserPrinter.printModel()
