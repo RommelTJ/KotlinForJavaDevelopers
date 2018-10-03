@@ -28,14 +28,26 @@ class SpecialLaserPrinter(modelName: String, ppm: Int): LaserPrinter(modelName, 
 }
 
 open class Something {
+
     val someProperty: String
+
     constructor(someParameter: String) {
         someProperty = someParameter
+        println("I'm in the parent's constructor.")
     }
+
 }
 
+class SomethingElse: Something {
+    constructor(someOtherParameter: String): super(someOtherParameter) {
+        println("I'm in the child's constructor.")
+    }
+}
 
 fun main(args: Array<String>) {
     val laserPrinter = LaserPrinter("Brother", 12)
     laserPrinter.printModel()
+
+    val somethingElse = SomethingElse("Test")
+
 }
