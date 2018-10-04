@@ -24,6 +24,10 @@ fun main(args: Array<String>) {
     val someClass2 = SomeClass.upperOrLowerCase("This isn't the string as-is", false)
     println(someClass1.someString)
     println(someClass2.someString)
+
+    wantSomeInterface(object: SomeInterface {
+        override fun mustImplement(num: Int): String = "This is from must implement ${num * 100}"
+    })
 }
 
 // There's no 'static' keyword in Kotlin so you have to create Companion objects.
@@ -51,4 +55,8 @@ class SomeClass private constructor (val someString: String) {
 
 interface SomeInterface {
     fun mustImplement(num: Int): String
+}
+
+fun wantSomeInterface(si: SomeInterface) {
+    println("Printing from wantSomeInterface ${si.mustImplement(22)}")
 }
