@@ -18,3 +18,14 @@ fun main(args: Array<String>) {
     println(CompanyCommunications.getTagLine())
     println(CompanyCommunications.getCopyrightLine())
 }
+
+// There's no 'static' keyword in Kotlin so you have to create Companion objects.
+class SomeClass {
+
+    private val privateVar = 6
+
+    fun accessPrivateVar() {
+        System.out.println("I'm accessing privateVar: $privateVar")
+    }
+
+}
