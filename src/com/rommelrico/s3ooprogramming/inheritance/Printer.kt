@@ -54,3 +54,5 @@ fun main(args: Array<String>) {
     val somethingElse = SomethingElse("Test")
 
 }
+
+interface MyInterface
