@@ -27,7 +27,7 @@ class SpecialLaserPrinter(modelName: String, ppm: Int): LaserPrinter(modelName, 
 
 }
 
-open class Something {
+open class Something: MySubInterface {
 
     val someProperty: String
 
@@ -36,6 +36,13 @@ open class Something {
         println("I'm in the parent's constructor.")
     }
 
+    override fun myFunction(str: String): String {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
+
+    override fun mySubFunction(num: Int): String {
+        TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+    }
 }
 
 class SomethingElse: Something {
