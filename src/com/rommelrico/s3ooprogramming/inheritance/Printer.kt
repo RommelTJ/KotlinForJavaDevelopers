@@ -56,3 +56,5 @@ fun main(args: Array<String>) {
 }
 
 interface MyInterface
+
+interface MySubInterface: MyInterface
