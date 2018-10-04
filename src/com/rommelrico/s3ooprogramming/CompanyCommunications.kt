@@ -25,9 +25,16 @@ fun main(args: Array<String>) {
     println(someClass1.someString)
     println(someClass2.someString)
 
+    var thisIsMutable = 45
+
     wantSomeInterface(object: SomeInterface {
-        override fun mustImplement(num: Int): String = "This is from must implement ${num * 100}"
+        override fun mustImplement(num: Int): String {
+            thisIsMutable++
+            return "This is from must implement ${num * 100}"
+        }
     })
+
+    println("$thisIsMutable")
 }
 
 // There's no 'static' keyword in Kotlin so you have to create Companion objects.
