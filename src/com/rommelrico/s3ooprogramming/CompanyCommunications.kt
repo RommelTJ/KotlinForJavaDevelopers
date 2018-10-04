@@ -24,6 +24,20 @@ fun main(args: Array<String>) {
 // There's no 'static' keyword in Kotlin so you have to create Companion objects.
 class SomeClass {
 
+    val someString: String
+
+    constructor(str: String) {
+        someString = str
+    }
+
+    constructor(str: String, lowerCase: Boolean) {
+        if (lowerCase) {
+            someString = str.toLowerCase()
+        } else {
+            someString = str.toUpperCase()
+        }
+    }
+
     // Everything within 'companion' is kind of like 'static' in Java.
     companion object {
         private var privateVar = 6
