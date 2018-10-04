@@ -66,6 +66,9 @@ fun main(args: Array<String>) {
 interface MyInterface {
 
     val number: Int
+    // val number2: Int = 50 // can't do this in Kotlin
+    val number2: Int
+        get() = number * 100
 
     fun myFunction(str: String): String
 
