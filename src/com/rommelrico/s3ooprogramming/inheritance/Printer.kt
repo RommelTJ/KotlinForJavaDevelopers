@@ -30,6 +30,7 @@ class SpecialLaserPrinter(modelName: String, ppm: Int): LaserPrinter(modelName, 
 open class Something: MySubInterface {
 
     val someProperty: String
+    override val number: Int = 25
 
     constructor(someParameter: String) {
         someProperty = someParameter
@@ -63,6 +64,8 @@ fun main(args: Array<String>) {
 }
 
 interface MyInterface {
+
+    val number: Int
 
     fun myFunction(str: String): String
 
