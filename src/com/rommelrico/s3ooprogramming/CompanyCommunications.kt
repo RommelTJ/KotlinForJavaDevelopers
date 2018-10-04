@@ -48,3 +48,7 @@ class SomeClass private constructor (val someString: String) {
     }
 
 }
+
+interface SomeInterface {
+    fun mustImplement(num: Int): String
+}
