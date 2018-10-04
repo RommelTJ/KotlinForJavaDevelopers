@@ -55,6 +55,15 @@ fun main(args: Array<String>) {
 
 }
 
-interface MyInterface
+interface MyInterface {
 
-interface MySubInterface: MyInterface
+    fun myFunction(str: String): String
+
+}
+
+interface MySubInterface: MyInterface {
+
+    fun mySubFunction(num: Int): String
+
+}
+
