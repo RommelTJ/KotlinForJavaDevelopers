@@ -19,30 +19,31 @@ fun main(args: Array<String>) {
     println(CompanyCommunications.getCopyrightLine())
 
     println(SomeClass.accessPrivateVar())
+
+    val someClass1 = SomeClass.justAssign("This is the string as-is")
+    val someClass2 = SomeClass.upperOrLowerCase("This isn't the string as-is", false)
+    println(someClass1.someString)
+    println(someClass2.someString)
 }
 
 // There's no 'static' keyword in Kotlin so you have to create Companion objects.
-class SomeClass {
-
-    val someString: String
-
-    constructor(str: String) {
-        someString = str
-    }
-
-    constructor(str: String, lowerCase: Boolean) {
-        if (lowerCase) {
-            someString = str.toLowerCase()
-        } else {
-            someString = str.toUpperCase()
-        }
-    }
+class SomeClass private constructor (val someString: String) {
 
     // Everything within 'companion' is kind of like 'static' in Java.
     companion object {
         private var privateVar = 6
 
         fun accessPrivateVar() = "I'm accessing $privateVar"
+
+        fun justAssign(str: String) = SomeClass(str)
+
+        fun upperOrLowerCase(str: String, lowerCase: Boolean): SomeClass {
+            if (lowerCase) {
+                return SomeClass(str.toLowerCase())
+            } else {
+                return SomeClass(str.toUpperCase())
+            }
+        }
 
     }
 
