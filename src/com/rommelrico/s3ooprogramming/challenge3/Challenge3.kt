@@ -1,6 +1,6 @@
 package com.rommelrico.s3ooprogramming.challenge3
 
-class KotlinBicycle(var cadence: Int, var gear: Int, var speed: Int) {
+open class KotlinBicycle(var cadence: Int, var gear: Int, var speed: Int) {
 
     fun applyBreak(decrement: Int) {
         speed -= decrement
@@ -11,4 +11,6 @@ class KotlinBicycle(var cadence: Int, var gear: Int, var speed: Int) {
     }
 
 }
+
+class KotlinMountainBike(var seatHeight: Int, cadence: Int, gear: Int, speed: Int): KotlinBicycle(cadence, gear, speed)
 
