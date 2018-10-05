@@ -1,5 +1,14 @@
 package com.rommelrico.s3ooprogramming.challenge3
 
+fun main(args: Array<String>) {
+    val b1 = KotlinBicycle(60, 5, 15)
+    b1.printDescription()
+    val b2 = KotlinMountainBike(20, 55, 20, 20)
+    b2.printDescription()
+    val b3 = KotlinRoadBike(22, 90, 12, 30)
+    b3.printDescription()
+}
+
 open class KotlinBicycle(var cadence: Int, var gear: Int, var speed: Int) {
 
     fun applyBreak(decrement: Int) {
