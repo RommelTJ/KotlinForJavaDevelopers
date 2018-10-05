@@ -14,6 +14,8 @@ fun main(args: Array<String>) {
     b5.printDescription()
     val b6 = KotlinRoadBike(tireWidth = 22, cadence = 90, speed = 30)
     b6.printDescription()
+
+    val b7 = KotlinMountainBike(23, 57, 12, 21, "Red")
 }
 
 open class KotlinBicycle(var cadence: Int, var gear: Int = 10, var speed: Int) {
@@ -33,6 +35,10 @@ open class KotlinBicycle(var cadence: Int, var gear: Int = 10, var speed: Int) {
 }
 
 class KotlinMountainBike(var seatHeight: Int, cadence: Int, gear: Int = 10, speed: Int): KotlinBicycle(cadence, gear, speed) {
+
+    constructor(seatHeight: Int, cadence: Int, gear: Int = 10, speed: Int, color: String): this(seatHeight, cadence, gear, speed) {
+        print("Bike color is: $color")
+    }
 
     override fun printDescription() {
         super.printDescription()
