@@ -7,9 +7,16 @@ fun main(args: Array<String>) {
     b2.printDescription()
     val b3 = KotlinRoadBike(22, 90, 12, 30)
     b3.printDescription()
+
+    val b4 = KotlinBicycle(cadence = 60, speed = 15)
+    b4.printDescription()
+    val b5 = KotlinMountainBike(seatHeight = 20, cadence = 55, speed = 20)
+    b5.printDescription()
+    val b6 = KotlinRoadBike(tireWidth = 22, cadence = 90, speed = 30)
+    b6.printDescription()
 }
 
-open class KotlinBicycle(var cadence: Int, var gear: Int, var speed: Int) {
+open class KotlinBicycle(var cadence: Int, var gear: Int = 10, var speed: Int) {
 
     fun applyBreak(decrement: Int) {
         speed -= decrement
@@ -25,7 +32,7 @@ open class KotlinBicycle(var cadence: Int, var gear: Int, var speed: Int) {
 
 }
 
-class KotlinMountainBike(var seatHeight: Int, cadence: Int, gear: Int, speed: Int): KotlinBicycle(cadence, gear, speed) {
+class KotlinMountainBike(var seatHeight: Int, cadence: Int, gear: Int = 10, speed: Int): KotlinBicycle(cadence, gear, speed) {
 
     override fun printDescription() {
         super.printDescription()
@@ -34,7 +41,7 @@ class KotlinMountainBike(var seatHeight: Int, cadence: Int, gear: Int, speed: In
 
 }
 
-class KotlinRoadBike(val tireWidth: Int, cadence: Int, gear: Int, speed: Int): KotlinBicycle(cadence, gear, speed) {
+class KotlinRoadBike(val tireWidth: Int, cadence: Int, gear: Int = 10, speed: Int): KotlinBicycle(cadence, gear, speed) {
 
     override fun printDescription() {
         super.printDescription()
