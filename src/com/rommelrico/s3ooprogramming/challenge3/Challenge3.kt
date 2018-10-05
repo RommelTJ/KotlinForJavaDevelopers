@@ -16,6 +16,7 @@ fun main(args: Array<String>) {
     b6.printDescription()
 
     val b7 = KotlinMountainBike(seatHeight = 23, cadence = 57, speed = 21, color = "Red")
+    KotlinMountainBike.availableColors.forEach { println(it) }
 }
 
 open class KotlinBicycle(var cadence: Int, var gear: Int = 10, var speed: Int) {
@@ -38,6 +39,12 @@ class KotlinMountainBike(var seatHeight: Int, cadence: Int, gear: Int = 10, spee
 
     constructor(seatHeight: Int, cadence: Int, gear: Int = 10, speed: Int, color: String): this(seatHeight, cadence, gear, speed) {
         print("Bike color is: $color")
+    }
+
+    // Adding a companion object with an immutable list of string 'availableColors' initialized to blue, red, white,
+    // black, green, and brown. Print available colors from main function.
+    companion object {
+        val availableColors = listOf("blue", "red", "white", "black", "green", "brown")
     }
 
     override fun printDescription() {
