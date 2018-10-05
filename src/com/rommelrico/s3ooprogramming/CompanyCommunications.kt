@@ -10,11 +10,13 @@ object CompanyCommunications {
 
     fun getTagLine() = "Our company rocks!"
 
-    fun getCopyrightLine() = "Copyright \u00A9 $currentYear Our Company. All rights reserved."
+    internal fun getCopyrightLine() = "Copyright \u00A9 $currentYear Our Company. All rights reserved."
 
 }
 
 fun main(args: Array<String>) {
+    topLevel("I'm private")
+
     println(Department.ACCOUNTING.getDepartmentInfo())
     println(CompanyCommunications.getTagLine())
     println(CompanyCommunications.getCopyrightLine())
