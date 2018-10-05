@@ -15,7 +15,7 @@ fun main(args: Array<String>) {
     val b6 = KotlinRoadBike(tireWidth = 22, cadence = 90, speed = 30)
     b6.printDescription()
 
-    val b7 = KotlinMountainBike(23, 57, 12, 21, "Red")
+    val b7 = KotlinMountainBike(seatHeight = 23, cadence = 57, speed = 21, color = "Red")
 }
 
 open class KotlinBicycle(var cadence: Int, var gear: Int = 10, var speed: Int) {
