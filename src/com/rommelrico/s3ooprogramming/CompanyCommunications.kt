@@ -15,6 +15,7 @@ object CompanyCommunications {
 }
 
 fun main(args: Array<String>) {
+    println(Department.ACCOUNTING.getDepartmentInfo())
     println(CompanyCommunications.getTagLine())
     println(CompanyCommunications.getCopyrightLine())
 
@@ -66,4 +67,15 @@ interface SomeInterface {
 
 fun wantSomeInterface(si: SomeInterface) {
     println("Printing from wantSomeInterface ${si.mustImplement(22)}")
+}
+
+// Enums in Kotlin
+enum class Department(val fullName: String, val numEmployees: Int) {
+    HR("Human Resources", 5),
+    IT("Information Technology", 10),
+    ACCOUNTING("Accounting", 3),
+    SALES("Sales", 20); // Semicolon required if you add a function.
+
+    fun getDepartmentInfo() = "The $fullName department has $numEmployees employees"
+
 }
