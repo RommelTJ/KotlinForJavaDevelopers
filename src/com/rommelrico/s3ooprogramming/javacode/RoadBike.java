@@ -13,5 +13,5 @@ public class RoadBike extends Bicycle {
     public int getTireWidth() {
         return tireWidth;
     }
-    
+
 }

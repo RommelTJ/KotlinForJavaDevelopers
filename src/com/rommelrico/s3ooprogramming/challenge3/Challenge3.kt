@@ -14,3 +14,5 @@ open class KotlinBicycle(var cadence: Int, var gear: Int, var speed: Int) {
 
 class KotlinMountainBike(var seatHeight: Int, cadence: Int, gear: Int, speed: Int): KotlinBicycle(cadence, gear, speed)
 
+class KotlinRoadBike(val tireWidth: Int, cadence: Int, gear: Int, speed: Int): KotlinBicycle(cadence, gear, speed)
+
