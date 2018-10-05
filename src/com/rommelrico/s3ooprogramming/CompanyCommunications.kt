@@ -79,3 +79,5 @@ enum class Department(val fullName: String, val numEmployees: Int) {
     fun getDepartmentInfo() = "The $fullName department has $numEmployees employees"
 
 }
+
+fun topLevel(str: String) = println("Top level function: $str")
