@@ -19,7 +19,7 @@ public class MountainBike extends Bicycle {
 
     public void printDescription() {
         super.printDescription();
-        System.out.println("The mountain bike has a seat height of " + seatHeight + ".");
+        System.out.println("The mountain bike has a seat height of " + seatHeight + " inches.");
     }
 
 }
