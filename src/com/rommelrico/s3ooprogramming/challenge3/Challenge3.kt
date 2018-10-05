@@ -10,6 +10,10 @@ open class KotlinBicycle(var cadence: Int, var gear: Int, var speed: Int) {
         speed += increment;
     }
 
+    fun printDescription() {
+        println("Bike is in gear $gear with a cadence of $cadence traveling at a speed of $speed.")
+    }
+
 }
 
 class KotlinMountainBike(var seatHeight: Int, cadence: Int, gear: Int, speed: Int): KotlinBicycle(cadence, gear, speed)
