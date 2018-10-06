@@ -7,5 +7,12 @@ fun main(args: Array<String>) {
     // You can also have ranges of chars and strings because they are comparable
     val charRange = 'a'..'z'
     val stringRange = "ABC".."XYZ"
-    
+
+    // Using the 'in' keyword.
+    println(3 in range) // true
+    println('q' in charRange) // true
+    println("CCC" in stringRange) // true
+    println("CCCCCC" in stringRange) // true
+    println("ZZZ" in stringRange) // false
+
 }
