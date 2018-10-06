@@ -16,5 +16,8 @@ fun main(args: Array<String>) {
     println("ZZZ" in stringRange) // false
 
     val backwardRange = 5.downTo(1)
+    println(5 in backwardRange)
+
+    
 
 }
