@@ -71,5 +71,7 @@ fun main(args: Array<String>) {
     println(notASeason) // true
     val notInRange = 32 !in 1..10
     println(notInRange)
+    println('e' in str) // true
+    println('e' !in str) // false
 
 }
