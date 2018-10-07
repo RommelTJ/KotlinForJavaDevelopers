@@ -23,4 +23,18 @@ fun main(args: Array<String>) {
     val stepThree = stepRange.step(3)
     val reversedRange = stepRange.reversed()
 
+    // Testing the for loops
+    for (i in range) {
+        println(i)
+    }
+    for (n in stepRange) {
+        println(n)
+    }
+    for (n in stepThree) {
+        println(n)
+    }
+    for (n in reversedRange) {
+        println(n)
+    }
+
 }
