@@ -48,7 +48,7 @@ fun main(args: Array<String>) {
     }
 
     // Using a range directly but backwards.
-    for (i in 20 downTo 15) {
+    for (i in 20 downTo 15 step 5) {
         println(i)
     }
 
