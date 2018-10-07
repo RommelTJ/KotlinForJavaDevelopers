@@ -27,4 +27,12 @@ fun main(args: Array<String>) {
         594
     })
 
+    // You can also assign Unit if you don't assign anything.
+    val x = if(someCondition) {
+        println("Something")
+    } else {
+        println("Something else")
+    }
+    println(x)
+
 }
