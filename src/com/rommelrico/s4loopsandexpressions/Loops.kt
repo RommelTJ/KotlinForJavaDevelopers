@@ -18,6 +18,9 @@ fun main(args: Array<String>) {
     val backwardRange = 5.downTo(1)
     println(5 in backwardRange)
 
-    
+    // Defining other types of ranges
+    val stepRange = 3..15
+    val stepThree = stepRange.step(3)
+    val reversedRange = stepRange.reversed()
 
 }
