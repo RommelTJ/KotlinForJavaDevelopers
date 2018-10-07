@@ -11,4 +11,13 @@ fun main(args: Array<String>) {
 //        num = 592
 //    }
     val num = if (someCondition) 50 else 592
+    println(num)
+
+    val num2 = if (someCondition) {
+        50
+    } else {
+        593
+    }
+    println(num2)
+
 }
