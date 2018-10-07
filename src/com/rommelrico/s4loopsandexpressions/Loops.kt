@@ -42,4 +42,9 @@ fun main(args: Array<String>) {
         println(c)
     }
 
+    // Looping inplace.
+    for (num in 1..20 step 4) {
+        println(num)
+    }
+
 }
