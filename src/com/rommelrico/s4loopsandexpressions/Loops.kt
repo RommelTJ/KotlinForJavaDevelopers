@@ -79,4 +79,8 @@ fun main(args: Array<String>) {
         println("${seasons[index]} is season number $index")
     }
 
+    // Using 'forEach' lambda
+    seasons.forEach { println(it) }
+    seasons.forEachIndexed { index, value -> println("$value is season number $index") }
+
 }
