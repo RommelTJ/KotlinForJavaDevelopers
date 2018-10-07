@@ -37,4 +37,9 @@ fun main(args: Array<String>) {
         println(n)
     }
 
+    val str = "Hello"
+    for (c in str) {
+        println(c)
+    }
+
 }
