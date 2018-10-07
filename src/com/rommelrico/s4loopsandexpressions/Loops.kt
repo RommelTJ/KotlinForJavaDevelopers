@@ -57,4 +57,9 @@ fun main(args: Array<String>) {
         println(i)
     }
 
+    // Using operators in a range
+    val s = "goodbye"
+    val sRange = 0..s.length
+
+
 }
