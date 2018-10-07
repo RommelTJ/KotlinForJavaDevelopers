@@ -91,7 +91,7 @@ fun main(args: Array<String>) {
             for (k in 5..10) {
                 println("k = $k")
                 if (k == 7) {
-                    break@jloop
+                    break@jloop // this also works with continue
                 }
             }
         }
