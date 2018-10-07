@@ -61,5 +61,10 @@ fun main(args: Array<String>) {
     val s = "goodbye"
     val sRange = 0..s.length
 
+    // Iterating over an array
+    val seasons = arrayOf("spring", "summer", "fall", "winter")
+    for (season in seasons)
+        println(season)
+
 
 }
