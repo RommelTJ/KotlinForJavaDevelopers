@@ -66,5 +66,9 @@ fun main(args: Array<String>) {
     for (season in seasons)
         println(season)
 
+    // Not in range
+    val notASeason = "whatever" !in seasons
+    println(notASeason) // true
+
 
 }
