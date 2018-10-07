@@ -52,4 +52,9 @@ fun main(args: Array<String>) {
         println(i)
     }
 
+    // Excluding the last value
+    for (i in 1 until 10) {
+        println(i)
+    }
+
 }
