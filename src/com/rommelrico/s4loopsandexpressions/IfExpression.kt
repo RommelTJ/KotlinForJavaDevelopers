@@ -20,4 +20,11 @@ fun main(args: Array<String>) {
     }
     println(num2)
 
+    // You can use if statements however you would use an expression
+    println(if (someCondition) {
+        50
+    } else {
+        594
+    })
+
 }
