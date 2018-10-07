@@ -74,4 +74,9 @@ fun main(args: Array<String>) {
     println('e' in str) // true
     println('e' !in str) // false
 
+    // Using range indices.
+    for (index in seasons.indices) {
+        println("${seasons[index]} is season number $index")
+    }
+
 }
