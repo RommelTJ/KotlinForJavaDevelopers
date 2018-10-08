@@ -46,4 +46,14 @@ fun main(args: Array<String>) {
         }
     }
 
+    // Part 5
+    val num: Int = 3
+    val dNum: Double = when {
+        num > 100 -> -234.567
+        num < 100 -> 4444.555
+        else -> 0.0
+    }
+    println(dNum)
+
+
 }
