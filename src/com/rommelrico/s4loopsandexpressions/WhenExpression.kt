@@ -75,4 +75,18 @@ fun main(args: Array<String>) {
     println(str)
     println(num)
 
+    val num2 = -150
+    if (num < num2) {
+        println("num is less than num2")
+    } else if (num > num2) {
+        println("num is greater than num2")
+    } else {
+        println("num = num2")
+    }
+    when {
+        num < num2 -> println("num is less than num2")
+        num > num2 -> println("num is greater than num2")
+        else -> println("num = num2")
+    }
+
 }
