@@ -2,6 +2,10 @@ package com.rommelrico.s4loopsandexpressions
 
 import java.math.BigDecimal
 
+enum class Season {
+    SPRING, SUMMER, FALL, WINTER
+}
+
 fun main(args: Array<String>) {
 
     // Equivalent 'when' expression to SwitchExample.java
