@@ -17,5 +17,6 @@ fun getNumber(str: String): Int {
         0
     } finally {
         println("I'm in the finally block.")
+        1 // not involved in value of try-catch block so won't be returned / will be ignored
     }
 }
