@@ -23,6 +23,9 @@ fun main(args: Array<String>) {
         println(num) // prints 25
     }
 
+    // Calling a top-level function from a lambda.
+    run(::topLevel)
+
 }
 
 // You can access function parameters within lambdas, but you can't change them.
