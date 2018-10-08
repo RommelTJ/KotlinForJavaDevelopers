@@ -9,7 +9,7 @@ enum class Season {
 fun main(args: Array<String>) {
 
     // Equivalent 'when' expression to SwitchExample.java
-    val num = 100
+    var num = 100
     when (num) {
         in 100..199 -> println("In range 100..199")
         200, 400 -> println("200")
@@ -59,13 +59,20 @@ fun main(args: Array<String>) {
     println(z)
 
     // Using when expressions with Enums
-    val timeOfYear = Season.WINTER
+    val timeOfYear = Season.SPRING
     val str = when (timeOfYear) {
-        Season.SPRING -> "Flowers are blooming."
+        Season.SPRING -> {
+            num += 5
+            "Flowers are blooming."
+        }
         Season.SUMMER -> "It's hot!"
         Season.FALL -> "It's getting cooler."
-        Season.WINTER -> "I need a coat."
+        Season.WINTER -> {
+            num = 22 - 55
+            "I need a coat."
+        }
     }
     println(str)
+    println(num)
 
 }
