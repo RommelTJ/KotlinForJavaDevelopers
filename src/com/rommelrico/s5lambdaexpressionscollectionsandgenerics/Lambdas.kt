@@ -14,6 +14,8 @@ fun main(args: Array<String>) {
     println(employees.minBy { e -> e.startYear })
     // More concise because only takes one argument type.
     println(employees.minBy { it.startYear })
+    // Another way
+    println(employees.minBy(Employee::startYear))
 
     var num = 10
     run {
