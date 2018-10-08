@@ -9,7 +9,10 @@ fun main(args: Array<String>) {
             Employee("Mary", "Johnson", 2010),
             Employee("Mike", "Jones", 2002)
     )
-    
+
+    // MinBy function
+    println(employees.minBy { e -> e.startYear })
+
 }
 
-class Employee(val firstName: String, val lastName: String, val startYear: Int)
+data class Employee(val firstName: String, val lastName: String, val startYear: Int)
