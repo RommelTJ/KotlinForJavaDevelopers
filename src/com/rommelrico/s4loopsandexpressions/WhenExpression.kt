@@ -1,5 +1,7 @@
 package com.rommelrico.s4loopsandexpressions
 
+import java.math.BigDecimal
+
 fun main(args: Array<String>) {
 
     // Equivalent 'when' expression to SwitchExample.java
@@ -18,6 +20,18 @@ fun main(args: Array<String>) {
         y + 90 -> println("100")
         300 -> println("300")
         else -> println("Doesn't match anything.")
+    }
+
+    val obj: Any = "I'm a string"
+    val obj2: Any = BigDecimal(25.2)
+    val obj3: Any = 45
+    val something: Any = obj2
+    if (something is String) {
+        println(something.toUpperCase())
+    } else if (something is BigDecimal) {
+        println(something.remainder(BigDecimal(10.5)))
+    } else if (something is Int) {
+        println("${something - 22}")
     }
 
 }
