@@ -26,12 +26,17 @@ fun main(args: Array<String>) {
     val obj2: Any = BigDecimal(25.2)
     val obj3: Any = 45
     val something: Any = obj2
-    if (something is String) {
-        println(something.toUpperCase())
-    } else if (something is BigDecimal) {
-        println(something.remainder(BigDecimal(10.5)))
-    } else if (something is Int) {
-        println("${something - 22}")
+//    if (something is String) {
+//        println(something.toUpperCase())
+//    } else if (something is BigDecimal) {
+//        println(something.remainder(BigDecimal(10.5)))
+//    } else if (something is Int) {
+//        println("${something - 22}")
+//    }
+    when (something) {
+        is String -> println(something.toUpperCase())
+        is BigDecimal -> println(something.remainder(BigDecimal(10.5)))
+        is Int -> println("${something - 22}")
     }
 
 }
