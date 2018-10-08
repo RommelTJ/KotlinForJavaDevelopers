@@ -23,4 +23,12 @@ fun main(args: Array<String>) {
 
 }
 
+// You can access function parameters within lambdas, but you can't change them.
+fun useParameter(employees: List<Employee>, num: Int) {
+    employees.forEach {
+        println(it.firstName)
+        println(num)
+    }
+}
+
 data class Employee(val firstName: String, val lastName: String, val startYear: Int)
