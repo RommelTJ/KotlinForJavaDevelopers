@@ -9,6 +9,8 @@ fun main(args: Array<String>) {
     println("${getNumber("5")}")
     println("${getNumber("abc") ?: "I CAN'T PRINT THE RESULT."}")
 
+    notImplementedYet("string")
+
 }
 
 fun getNumber(str: String): Int? {
@@ -21,3 +23,8 @@ fun getNumber(str: String): Int? {
         1 // not involved in value of try-catch block so won't be returned / will be ignored
     }
 }
+
+fun notImplementedYet(str: String): Nothing {
+    throw IllegalArgumentException("IMPLEMENT ME!")
+}
+
