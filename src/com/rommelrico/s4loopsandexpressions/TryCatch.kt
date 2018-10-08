@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
 
     // Using try and catch as an expression in Kotlin
     println("${getNumber("5")}")
-    println("${getNumber("abc") ?: throw IllegalArgumentException("Number isn't Int")}")
+    println("${getNumber("abc") ?: "I CAN'T PRINT THE RESULT."}")
 
 }
 
