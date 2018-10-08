@@ -34,7 +34,6 @@ fun main(args: Array<String>) {
         }
         for (j in 11..20) {
             println(j)
-            if (j == 11) continue
             for (k in 100 downTo 90) {
                 println(k)
                 if (k == 98) {
