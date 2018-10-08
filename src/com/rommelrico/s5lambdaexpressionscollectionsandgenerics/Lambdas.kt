@@ -33,4 +33,6 @@ fun useParameter(employees: List<Employee>, num: Int) {
     }
 }
 
+fun topLevel() = println("I'm in a function")
+
 data class Employee(val firstName: String, val lastName: String, val startYear: Int)
