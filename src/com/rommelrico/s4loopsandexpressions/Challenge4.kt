@@ -7,4 +7,9 @@ fun main(args: Array<String>) {
         println(num)
     }
 
+    // Part 2
+    for (num in -500..0) {
+        println(num)
+    }
+
 }
