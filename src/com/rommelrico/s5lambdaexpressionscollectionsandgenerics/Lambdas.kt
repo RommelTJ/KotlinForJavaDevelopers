@@ -12,6 +12,8 @@ fun main(args: Array<String>) {
 
     // MinBy function
     println(employees.minBy { e -> e.startYear })
+    // More concise because only takes one argument type.
+    println(employees.minBy { it.startYear })
 
 }
 
