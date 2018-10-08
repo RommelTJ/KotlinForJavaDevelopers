@@ -58,4 +58,14 @@ fun main(args: Array<String>) {
     }
     println(z)
 
+    // Using when expressions with Enums
+    val timeOfYear = Season.WINTER
+    val str = when (timeOfYear) {
+        Season.SPRING -> "Flowers are blooming."
+        Season.SUMMER -> "It's hot!"
+        Season.FALL -> "It's getting cooler."
+        Season.WINTER -> "I need a coat."
+    }
+    println(str)
+
 }
