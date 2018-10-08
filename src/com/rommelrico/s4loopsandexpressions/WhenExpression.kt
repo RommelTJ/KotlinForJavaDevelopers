@@ -35,10 +35,23 @@ fun main(args: Array<String>) {
 //    }
     // You can assign a when expression to a variable
     val z = when (something) {
-        is String -> println(something.toUpperCase())
-        is BigDecimal -> println(something.remainder(BigDecimal(10.5)))
-        is Int -> println("${something - 22}")
-        else -> println("Nothing")
+        is String -> {
+            println(something.toUpperCase())
+            1
+        }
+        is BigDecimal -> {
+            println(something.remainder(BigDecimal(10.5)))
+            2
+        }
+        is Int -> {
+            println("${something - 22}")
+            3
+        }
+        else -> {
+            println("Nothing")
+            -1
+        }
     }
+    println(z)
 
 }
