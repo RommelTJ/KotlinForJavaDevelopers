@@ -15,6 +15,12 @@ fun main(args: Array<String>) {
     // More concise because only takes one argument type.
     println(employees.minBy { it.startYear })
 
+    var num = 10
+    run {
+        num += 15
+        println(num) // prints 25
+    }
+
 }
 
 data class Employee(val firstName: String, val lastName: String, val startYear: Int)
