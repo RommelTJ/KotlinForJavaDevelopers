@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     // Using try and catch as an expression in Kotlin
     println("${getNumber("5")}")
     println("${getNumber("abc")}")
-    
+
 }
 
 fun getNumber(str: String): Int {
@@ -15,5 +15,7 @@ fun getNumber(str: String): Int {
         Integer.parseInt(str)
     } catch (e: NumberFormatException) {
         0
+    } finally {
+        println("I'm in the finally block.")
     }
 }
