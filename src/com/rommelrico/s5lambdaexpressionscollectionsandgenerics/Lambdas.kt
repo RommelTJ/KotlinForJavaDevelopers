@@ -28,6 +28,7 @@ fun main(args: Array<String>) {
 
     println(countTo100())
     println(countTo100Short())
+    println(countTo100Apply())
 
 }
 
@@ -53,6 +54,16 @@ fun countTo100Short() =
         append(100)
         toString()
     }
+
+// Another type of receiver is the apply function.
+fun countTo100Apply() =
+        StringBuilder().apply {
+            for (i in 1..99) {
+                append(i)
+                append(", ")
+            }
+            append(100)
+        }.toString()
 
 // You can access function parameters within lambdas, but you can't change them.
 fun useParameter(employees: List<Employee>, num: Int) {
