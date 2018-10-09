@@ -27,6 +27,7 @@ fun main(args: Array<String>) {
     run(::topLevel)
 
     println(countTo100())
+    println(countTo100Short())
 
 }
 
@@ -39,6 +40,19 @@ fun countTo100(): String {
     }
     numbers.append(100)
     return numbers.toString()
+}
+
+// Also writing 1..100 separated by commas
+fun countTo100Short(): String {
+    val numbers = StringBuilder()
+    return with(numbers) {
+        for (i in 1..99) {
+            append(i)
+            append(", ")
+        }
+        append(100)
+        toString()
+    }
 }
 
 // You can access function parameters within lambdas, but you can't change them.
