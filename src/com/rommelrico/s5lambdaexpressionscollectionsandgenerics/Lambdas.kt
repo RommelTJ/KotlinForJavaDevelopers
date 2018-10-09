@@ -44,8 +44,8 @@ fun countTo100(): String {
 
 // Also writing 1..100 separated by commas
 // with converts the instance into a receiver and inside the lambda you don't have to refer to the receiver.
-fun countTo100Short(): String {
-    return with(StringBuilder()) {
+fun countTo100Short() =
+    with(StringBuilder()) {
         for (i in 1..99) {
             append(i)
             append(", ")
@@ -53,7 +53,6 @@ fun countTo100Short(): String {
         append(100)
         toString()
     }
-}
 
 // You can access function parameters within lambdas, but you can't change them.
 fun useParameter(employees: List<Employee>, num: Int) {
