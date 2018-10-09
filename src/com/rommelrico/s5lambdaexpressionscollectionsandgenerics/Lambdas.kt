@@ -32,6 +32,14 @@ fun main(args: Array<String>) {
 
     println(findByLastName(employees, "Wilson"))
     println(findByLastName(employees, "Rico"))
+
+    // Using labels with receiver objects.
+    "Some String". apply someString@ {
+        "Another String".apply {
+            println(toLowerCase()) // refers to "Another String"
+            println(this@someString.toUpperCase()) // refers to "Some String"
+        }
+    }
 }
 
 // Writing 1..100 separated by commas
