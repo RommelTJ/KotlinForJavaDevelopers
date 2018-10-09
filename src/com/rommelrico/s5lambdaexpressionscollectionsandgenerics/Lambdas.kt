@@ -30,6 +30,8 @@ fun main(args: Array<String>) {
     println(countTo100Short())
     println(countTo100Apply())
 
+    println(findByLastName(employees, "Wilson"))
+    println(findByLastName(employees, "Rico"))
 }
 
 // Writing 1..100 separated by commas
@@ -71,6 +73,17 @@ fun useParameter(employees: List<Employee>, num: Int) {
         println(it.firstName)
         println(num)
     }
+}
+
+fun findByLastName(employees: List<Employee>, lastName: String) {
+    for (e in employees) {
+        if (e.lastName == lastName) {
+            println("Yes, there's an employee with the last name $lastName.")
+            return
+        }
+    }
+
+    println("No, there's no employee with the last name $lastName.")
 }
 
 fun topLevel() = println("I'm in a function")
