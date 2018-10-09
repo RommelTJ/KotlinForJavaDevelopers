@@ -75,11 +75,12 @@ fun useParameter(employees: List<Employee>, num: Int) {
     }
 }
 
+// Example using forEach and labels
 fun findByLastName(employees: List<Employee>, lastName: String) {
-    for (e in employees) {
-        if (e.lastName == lastName) {
+    employees.forEach returnBlock@ {
+        if (it.lastName == lastName) {
             println("Yes, there's an employee with the last name $lastName.")
-            return
+            return@returnBlock
         }
     }
 
