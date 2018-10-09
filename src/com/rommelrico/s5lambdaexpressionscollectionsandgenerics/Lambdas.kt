@@ -43,6 +43,7 @@ fun countTo100(): String {
 }
 
 // Also writing 1..100 separated by commas
+// with converts the instance into a receiver and inside the lambda you don't have to refer to the receiver.
 fun countTo100Short(): String {
     val numbers = StringBuilder()
     return with(numbers) {
