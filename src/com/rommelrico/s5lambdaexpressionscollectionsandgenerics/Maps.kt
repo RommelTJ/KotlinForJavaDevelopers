@@ -34,6 +34,11 @@ fun main(args: Array<String>) {
         println(entry.key)
         println(entry.value)
     }
+    // Another way using destructuring declaration
+    for ((key, value) in mutableMap) {
+        println(key)
+        println(value)
+    }
 
 }
 
