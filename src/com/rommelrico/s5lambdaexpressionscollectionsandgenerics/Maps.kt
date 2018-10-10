@@ -21,6 +21,14 @@ fun main(args: Array<String>) {
     mutableMap.put("Mary's Car", Car("red", "Corvette", 1965))
     println(mutableMap)
 
+    val pair = Pair(10, "ten")
+    val firstValue = pair.first
+    val secondValue = pair.second
+    // Destructuring declarations in Kotlin
+    val (first, second) = pair
+    println(first) // prints 10
+    println(second) // prints "ten"
+
 }
 
 data class Car(val color: String, val model: String, val year: Int)
