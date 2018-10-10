@@ -57,6 +57,12 @@ fun main(args: Array<String>) {
     println(setInts.average()) // prints 5.0
     println(setInts.drop(3)) // prints [5, 3, -22] i.e. drop the first 3 elements.
 
+    // Mutables Sets in Kotlin
+    val mutableInts = mutableSetOf(1, 2, 3, 4, 5)
+    mutableInts.plus(10)
+    println(mutableInts) // prints [1, 2, 3, 4, 5] even if it's mutable because plus doesn't change original collection.
+    
+
 }
 
 data class Car(val color: String, val model: String, val year: Int)
