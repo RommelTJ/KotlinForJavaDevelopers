@@ -7,4 +7,8 @@ fun main(args: Array<String>) {
 
     val emptyList = emptyList<String>()
     println(emptyList.javaClass) // class kotlin.collections.EmptyList
+
+    // List of not null
+    val notNullList = listOfNotNull("hello", null, "goodbye")
+    println(notNullList) // prints hello and goodbye
 }
