@@ -17,5 +17,9 @@ fun main(args: Array<String>) {
     println(ints.max())
     // Joining a list with the zip function.
     println(colorList.zip(strings)) // prints [(black, spring), (white, summer), (green, fall)]
+    // Merging a list
+    val mergedList = listOf(colorList, strings)
+    println(mergedList) // Prints [[black, white, green], [spring, summer, fall, winter]]
+    
 
 }
