@@ -8,7 +8,9 @@ fun main(args: Array<String>) {
             2 to Car("red", "Ford", 2016),
             3 to Car("silver", "Honda", 2013)
     )
-
+    println(immutableMap.javaClass) // class java.util.LinkedHashMap
+    println(immutableMap)
+    
 }
 
 data class Car(val color: String, val model: String, val year: Int)
