@@ -52,6 +52,8 @@ fun main(args: Array<String>) {
     val setInts = setOf(10, 15, 19, 5, 3, -22)
     println(setInts.plus(20))
     println(setInts.plus(10))
+    println(setInts.minus(19))
+    println(setInts.minus(24))
 
 }
 
