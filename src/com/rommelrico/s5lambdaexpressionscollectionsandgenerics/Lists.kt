@@ -7,5 +7,7 @@ fun main(args: Array<String>) {
 
     // Getting last element in a List.
     println(strings.last())
+    // Reversing a list.
+    println(strings.asReversed())
 
 }
