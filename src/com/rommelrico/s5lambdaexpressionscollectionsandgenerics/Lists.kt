@@ -23,5 +23,8 @@ fun main(args: Array<String>) {
     // Combining two lists
     val combinedList = colorList + strings
     println(combinedList) // prints [black, white, green, spring, summer, fall, winter]
+    // removing duplicates.
+    val noDupesList = colorList.union(strings)
+    println(noDupesList) // prints [black, white, green, red, spring, summer, fall, winter]
 
 }
