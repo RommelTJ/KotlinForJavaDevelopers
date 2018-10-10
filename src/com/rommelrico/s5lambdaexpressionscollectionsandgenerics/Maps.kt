@@ -18,6 +18,8 @@ fun main(args: Array<String>) {
     )
     println(mutableMap.javaClass) // class java.util.LinkedHashMap
     println(mutableMap)
+    mutableMap.put("Mary's Car", Car("red", "Corvette", 1965))
+    println(mutableMap)
 
 }
 
