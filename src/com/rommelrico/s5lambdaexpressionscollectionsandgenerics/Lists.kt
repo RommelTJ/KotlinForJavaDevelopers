@@ -9,5 +9,8 @@ fun main(args: Array<String>) {
     println(strings.last())
     // Reversing a list.
     println(strings.asReversed())
+    // Getting an item if it exists.
+    println(strings.getOrNull(5))
+    println(strings.getOrNull(2))
 
 }
