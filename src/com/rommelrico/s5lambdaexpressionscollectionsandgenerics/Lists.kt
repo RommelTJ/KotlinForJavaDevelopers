@@ -26,5 +26,8 @@ fun main(args: Array<String>) {
     // removing duplicates.
     val noDupesList = colorList.union(strings)
     println(noDupesList) // prints [black, white, green, red, spring, summer, fall, winter]
+    // Removing duplicates in a single list
+    val noDupesColors = colorList.distinct()
+    println(noDupesColors)
 
 }
