@@ -54,6 +54,8 @@ fun main(args: Array<String>) {
     println(setInts.plus(10))
     println(setInts.minus(19))
     println(setInts.minus(24))
+    println(setInts.average()) // prints 5.0
+    println(setInts.drop(3)) // prints [5, 3, -22] i.e. drop the first 3 elements.
 
 }
 
