@@ -23,6 +23,10 @@ fun main(args: Array<String>) {
     // Generating a list from an array.
     val array = arrayOf("black", "white", "green")
     val colorList = listOf(array)
+    val colorList2 = listOf(*array)
+    val colorList3 = array.toList()
     println(colorList.javaClass) // prints class java.util.Collections$SingletonList
+    println(colorList2.javaClass) // prints class java.util.Arrays$ArrayList
+    println(colorList3.javaClass) // prints class java.util.ArrayList
 
 }
