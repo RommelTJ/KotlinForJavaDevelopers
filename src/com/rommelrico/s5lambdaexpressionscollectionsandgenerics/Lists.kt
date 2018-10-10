@@ -15,5 +15,7 @@ fun main(args: Array<String>) {
     println(strings.getOrNull(2))
     // Getting a maximum value in a collection.
     println(ints.max())
+    // Joining a list with the zip function.
+    println(colorList.zip(strings)) // prints [(black, spring), (white, summer), (green, fall)]
 
 }
