@@ -48,6 +48,11 @@ fun main(args: Array<String>) {
     println(model)
     println(year)
 
+    // Sets are Immutable.
+    val setInts = setOf(10, 15, 19, 5, 3, -22)
+    println(setInts.plus(20))
+    println(setInts.plus(10))
+
 }
 
 data class Car(val color: String, val model: String, val year: Int)
