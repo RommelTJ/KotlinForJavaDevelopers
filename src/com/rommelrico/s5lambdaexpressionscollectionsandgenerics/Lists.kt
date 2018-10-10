@@ -20,6 +20,8 @@ fun main(args: Array<String>) {
     // Merging a list
     val mergedList = listOf(colorList, strings)
     println(mergedList) // Prints [[black, white, green], [spring, summer, fall, winter]]
-    
+    // Combining two lists
+    val combinedList = colorList + strings
+    println(combinedList) // prints [black, white, green, spring, summer, fall, winter]
 
 }
