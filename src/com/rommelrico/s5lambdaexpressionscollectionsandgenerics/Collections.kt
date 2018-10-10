@@ -29,4 +29,7 @@ fun main(args: Array<String>) {
     println(colorList2.javaClass) // prints class java.util.Arrays$ArrayList
     println(colorList3.javaClass) // prints class java.util.ArrayList
 
+    val ints = intArrayOf(1, 2, 3)
+    println(ints.toList())
+
 }
