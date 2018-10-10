@@ -29,6 +29,12 @@ fun main(args: Array<String>) {
     println(first) // prints 10
     println(second) // prints "ten"
 
+    // Iterating over mutable map.
+    for (entry in mutableMap) {
+        println(entry.key)
+        println(entry.value)
+    }
+
 }
 
 data class Car(val color: String, val model: String, val year: Int)
