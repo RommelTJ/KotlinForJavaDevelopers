@@ -5,6 +5,8 @@ fun main(args: Array<String>) {
     val strings = listOf("spring", "summer", "fall", "summer", "winter")
     val colorList = listOf("black", "white", "green", "black", "red")
     val ints = listOf(1, 2, 4, 6, 9, 3)
+    val mutableSeasons = strings.toMutableList()
+    mutableSeasons.add("Some Other Season")
 
     // Getting last element in a List.
     println(strings.last())
