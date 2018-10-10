@@ -40,6 +40,14 @@ fun main(args: Array<String>) {
         println(value)
     }
 
+    // Using destructuring declarations with a Car class.
+    // The Car Class has to implement the component functions. This is provided by the data classes.
+    val car = Car("blue", "Corvette", 1959)
+    val (color, model, year) = car
+    println(color)
+    println(model)
+    println(year)
+
 }
 
 data class Car(val color: String, val model: String, val year: Int)
