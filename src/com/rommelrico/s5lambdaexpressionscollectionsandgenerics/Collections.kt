@@ -20,4 +20,9 @@ fun main(args: Array<String>) {
     val mutableList = mutableListOf(1, 2, 3)
     println(mutableList.javaClass) // prints class java.util.ArrayList
 
+    // Generating a list from an array.
+    val array = arrayOf("black", "white", "green")
+    val colorList = listOf(array)
+    println(colorList.javaClass) // prints class java.util.Collections$SingletonList
+
 }
