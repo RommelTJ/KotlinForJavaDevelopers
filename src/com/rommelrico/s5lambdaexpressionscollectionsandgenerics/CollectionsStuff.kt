@@ -9,5 +9,6 @@ fun main(args: Array<String>) {
             2 to Car("red", "Ford", 2016),
             3 to Car("silver", "Honda", 2013)
     )
+    println(immutableMap.filter { it.value.year == 2015 }) // Filtering for 2015 cars
 
 }
