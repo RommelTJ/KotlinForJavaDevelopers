@@ -15,7 +15,9 @@ fun main(args: Array<String>) {
     val mutableMap = mutableMapOf(
             1 to Car("green", "Toyota", 2015),
             2 to Car("red", "Ford", 2016),
-            3 to Car("silver", "Honda", 2013)
+            3 to Car("silver", "Honda", 2013),
+            17 to Car("red", "BMW", 2015),
+            8 to Car("green", "Ford", 2010)
     )
     println(mutableMap.filter { it.value.color == "silver" })
 
@@ -33,5 +35,9 @@ fun main(args: Array<String>) {
 
     // Getting a list of the years.
     println(immutableMap.map { it.value.year } ) // prints [2015, 2016, 2013]
+
+    // Chaining filters and maps.
+    // Getting all colors of Ford cars.
+    println(mutableMap.filter { it.value.model == "Ford" }.map { it.value.color }) // prints [red, green]
 
 }
