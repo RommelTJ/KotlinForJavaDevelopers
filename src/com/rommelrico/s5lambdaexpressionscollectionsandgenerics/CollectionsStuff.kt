@@ -27,4 +27,8 @@ fun main(args: Array<String>) {
     }
     println(add10List) // prints [11, 12, 13, 14, 15]
 
+    // Adding 10 using a lambda (map function).
+    val add10ListTwo = ints.map { it + 10 }
+    println(add10ListTwo)
+
 }
