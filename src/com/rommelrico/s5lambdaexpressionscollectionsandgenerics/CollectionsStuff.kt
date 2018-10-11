@@ -31,4 +31,7 @@ fun main(args: Array<String>) {
     val add10ListTwo = ints.map { it + 10 }
     println(add10ListTwo)
 
+    // Getting a list of the years.
+    println(immutableMap.map { it.value.year } ) // prints [2015, 2016, 2013]
+
 }
