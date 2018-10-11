@@ -40,4 +40,7 @@ fun main(args: Array<String>) {
     // Getting all colors of Ford cars.
     println(mutableMap.filter { it.value.model == "Ford" }.map { it.value.color }) // prints [red, green]
 
+    // Checking if all cars are newer than 2014.
+    println(mutableMap.all { it.value.year > 2014 }) // prints false
+
 }
