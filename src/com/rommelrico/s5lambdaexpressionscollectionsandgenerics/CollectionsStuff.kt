@@ -48,4 +48,8 @@ fun main(args: Array<String>) {
     // Checking how many cars are newer than 2014.
     println(mutableMap.count { it.value.year > 2014 }) // prints 3
 
+    // Finding the first car that's newer than 2014
+    val cars = mutableMap.values
+    println(cars.find { it.year > 2014 }) // prints Car(color=green, model=Toyota, year=2015)
+
 }
