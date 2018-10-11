@@ -54,4 +54,7 @@ fun main(args: Array<String>) {
     // Grouping items by color
     println(cars.groupBy { it.color }) // prints sets of cars grouped by color.
 
+    // Using the sortedBy function.
+    println(mutableMap.toSortedMap()) // sorts by key.
+
 }
