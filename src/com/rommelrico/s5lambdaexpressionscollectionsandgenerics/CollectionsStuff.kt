@@ -11,4 +11,12 @@ fun main(args: Array<String>) {
     )
     println(immutableMap.filter { it.value.year == 2015 }) // Filtering for 2015 cars
 
+    // Filtering on a mutable map. It returns a new map. Doesn't alter the existing map.
+    val mutableMap = mutableMapOf(
+            1 to Car("green", "Toyota", 2015),
+            2 to Car("red", "Ford", 2016),
+            3 to Car("silver", "Honda", 2013)
+    )
+    println(mutableMap.filter { it.value.color == "silver" })
+
 }
