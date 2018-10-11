@@ -56,5 +56,7 @@ fun main(args: Array<String>) {
 
     // Using the sortedBy function.
     println(mutableMap.toSortedMap()) // sorts by key.
+    // Sorting the list by year.
+    println(cars.sortedBy { it.year }) // sorts by year (in ascending order).
 
 }
