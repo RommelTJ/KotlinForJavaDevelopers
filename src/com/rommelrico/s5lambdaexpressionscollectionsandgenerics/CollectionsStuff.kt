@@ -19,4 +19,12 @@ fun main(args: Array<String>) {
     )
     println(mutableMap.filter { it.value.color == "silver" })
 
+    // Adding 10 to the mutable list.
+    val ints = arrayOf(1, 2, 3, 4, 5)
+    val add10List: MutableList<Int> = mutableListOf()
+    for (i in ints) {
+        add10List.add(i + 10)
+    }
+    println(add10List) // prints [11, 12, 13, 14, 15]
+
 }
