@@ -51,5 +51,7 @@ fun main(args: Array<String>) {
     // Finding the first car that's newer than 2014
     val cars = mutableMap.values
     println(cars.find { it.year > 2014 }) // prints Car(color=green, model=Toyota, year=2015)
+    // Grouping items by color
+    println(cars.groupBy { it.color }) // prints sets of cars grouped by color.
 
 }
