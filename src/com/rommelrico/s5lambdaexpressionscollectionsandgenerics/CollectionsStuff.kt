@@ -43,4 +43,7 @@ fun main(args: Array<String>) {
     // Checking if all cars are newer than 2014.
     println(mutableMap.all { it.value.year > 2014 }) // prints false
 
+    // Checking if any car is newer than 2014.
+    println(mutableMap.any { it.value.year > 2014 }) // prints true
+
 }
