@@ -8,4 +8,8 @@ fun main(args: Array<String>) {
             17 to Car("red", "BMW", 2015),
             8 to Car("green", "Ford", 2010)
     )
+
+    // Working with collections
+    println(immutableMap.filter { it.value.model == "Ford" }.map { it.value.color })
+
 }
