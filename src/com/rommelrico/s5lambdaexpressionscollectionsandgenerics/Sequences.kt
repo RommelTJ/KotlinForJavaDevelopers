@@ -36,4 +36,8 @@ fun main(args: Array<String>) {
             .filter { println("filtering $it"); it[0] == 'J' }
             .map { println("mapping $it"); it.toUpperCase() }
             .find { it.endsWith('E') } // finds Joe and Jane because all values are evaluated.
+    listOf("Joe", "Mary", "Jane")
+            .map { println("mapping $it"); it.toUpperCase() } // doing the map first. Order matters.
+            .filter { println("filtering $it"); it[0] == 'J' }
+            .find { it.endsWith('E') } // finds Joe and Jane because all values are evaluated.
 }
