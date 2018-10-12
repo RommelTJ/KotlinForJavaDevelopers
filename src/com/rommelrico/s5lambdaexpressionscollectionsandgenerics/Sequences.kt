@@ -10,6 +10,12 @@ fun main(args: Array<String>) {
     )
 
     // Working with collections
-    println(immutableMap.filter { it.value.model == "Ford" }.map { it.value.color })
+    println(immutableMap.filter { it.value.model == "Ford" }.map { it.value.color }) // prints [red, green]
+
+    // Sequences are the same as Streams in Java. Java Streams are not available in every platform.
+    // Avoiding creation of intermediate collections with sequences. Also useful when you don't know how much data
+    // will be returned. Kotlin collections are very efficient, though.
+    println(immutableMap.asSequence().filter { it.value.model == "Ford" }.map { it.value.color }) // prints kotlin.sequences.TransformingSequence@3af49f1c
+
 
 }
