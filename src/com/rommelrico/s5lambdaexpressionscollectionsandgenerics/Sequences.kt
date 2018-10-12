@@ -21,4 +21,10 @@ fun main(args: Array<String>) {
     // not terminal operations. In other words, Kotlin Sequences are lazily evaluated.
     listOf("Joe", "Mary", "Jane").asSequence().filter { println("filtering $it"); it[0] == 'J' }.map { println("mapping $it"); it.toUpperCase() }
 
+    // This Sequence has a terminal operation: toList()
+    listOf("Joe", "Mary", "Jane").asSequence()
+            .filter { println("filtering $it"); it[0] == 'J' }
+            .map { println("mapping $it"); it.toUpperCase() }
+            .toList()
+
 }
