@@ -17,7 +17,8 @@ fun main(args: Array<String>) {
     // will be returned. Kotlin collections are very efficient, though.
     println(immutableMap.asSequence().filter { it.value.model == "Ford" }.map { it.value.color }) // prints kotlin.sequences.TransformingSequence@3af49f1c
 
-    // Transforming items in a sequence. None of the print statements run because these are intermediate operations, not terminal operations.
+    // Transforming items in a sequence. None of the print statements run because these are intermediate operations,
+    // not terminal operations. In other words, Kotlin Sequences are lazily evaluated.
     listOf("Joe", "Mary", "Jane").asSequence().filter { println("filtering $it"); it[0] == 'J' }.map { println("mapping $it"); it.toUpperCase() }
 
 }
