@@ -27,4 +27,13 @@ fun main(args: Array<String>) {
             .map { println("mapping $it"); it.toUpperCase() }
             .toList()
 
+    // Terminating a Sequence with find and showing differences between Sequences and Collections
+    listOf("Joe", "Mary", "Jane").asSequence()
+            .filter { println("filtering $it"); it[0] == 'J' }
+            .map { println("mapping $it"); it.toUpperCase() }
+            .find { it.endsWith('E') } // finds Joe and Sequence terminates
+    listOf("Joe", "Mary", "Jane")
+            .filter { println("filtering $it"); it[0] == 'J' }
+            .map { println("mapping $it"); it.toUpperCase() }
+            .find { it.endsWith('E') } // finds Joe and Jane because all values are evaluated.
 }
