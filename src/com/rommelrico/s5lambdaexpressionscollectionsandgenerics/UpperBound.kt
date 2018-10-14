@@ -6,3 +6,9 @@ fun main(args: Array<String>) {
     val shorts: List<Short> = listOf(10, 20, 30, 40)
 
 }
+
+fun <T: Number> convertToInt(collection: List<T>) {
+    for (num in collection) {
+        println("${num.toInt()}")
+    }
+}
