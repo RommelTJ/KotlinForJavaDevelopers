@@ -27,7 +27,9 @@ fun main(args: Array<String>) {
     // Cannot do this because compiler can't guarantee this.
     // Use the star projection syntax.
     if (listAny is List<*>) {
-        // cannot do this.
+        println("This list contains strings")
+        val strList = listAny as List<String>
+        println(strList[1].replace("str", "string"))
     }
 
 }
