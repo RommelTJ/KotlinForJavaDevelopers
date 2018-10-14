@@ -9,6 +9,7 @@ fun main(args: Array<String>) {
     val shorts: List<Short?> = listOf(10, 20, 30, 40)
     val floats: List<Float?> = listOf(100.3f, -459.43f)
     val strings = listOf("1", "2", "3")
+    val listAny: Any = listOf("str1", "str2")
 
     convertToInt(ints)
     convertToInt(shorts)
@@ -22,6 +23,11 @@ fun main(args: Array<String>) {
     if (strings is List<String>) {
         println("This list contains Strings")
     }
+
+    // Cannot do this because compiler can't guarantee this.
+//    if (listAny is List<String>) {
+//        // cannot do this.
+//    }
 
 }
 
