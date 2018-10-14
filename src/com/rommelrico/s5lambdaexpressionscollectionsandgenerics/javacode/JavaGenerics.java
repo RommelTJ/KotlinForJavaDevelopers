@@ -10,7 +10,7 @@ public class JavaGenerics {
         list.add("Hello");
 
         boolean b = list instanceof List;
-        
+
     }
 
 }

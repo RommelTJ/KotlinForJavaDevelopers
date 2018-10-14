@@ -19,6 +19,10 @@ fun main(args: Array<String>) {
     printCollection(shorts)
     printCollection(strings)
 
+    if (strings is List<String>) {
+        println("This list contains Strings")
+    }
+
 }
 
 fun <T: Number?> convertToInt(collection: List<T>) {
