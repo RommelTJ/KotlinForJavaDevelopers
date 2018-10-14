@@ -5,6 +5,9 @@ fun main(args: Array<String>) {
     val ints = listOf(1, 2, 3, 4, 5)
     val shorts: List<Short> = listOf(10, 20, 30, 40)
 
+    convertToInt(ints)
+    convertToInt(shorts)
+
 }
 
 fun <T: Number> convertToInt(collection: List<T>) {
