@@ -25,9 +25,10 @@ fun main(args: Array<String>) {
     }
 
     // Cannot do this because compiler can't guarantee this.
-//    if (listAny is List<String>) {
-//        // cannot do this.
-//    }
+    // Use the star projection syntax.
+    if (listAny is List<*>) {
+        // cannot do this.
+    }
 
 }
 
