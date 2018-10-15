@@ -11,10 +11,15 @@ fun convertToInt(collection: MutableList<Number>) {
     }
 }
 
+fun tendGarden(roseGarden: Garden<Rose>) {
+    waterGarden(roseGarden) // can't do this because Garden is invariant.
+}
+
 fun waterGarden(garden: Garden<Flower>) {  }
 
 open class Flower
 
 class Rose: Flower()
 
+// This class is invariant.
 class Garden<T: Flower>
