@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
 
 }
 
-// Reified function.
+// Reified function requires to be inline and specified the "reified" keyword so the type isn't erased at runtime.
 inline fun <reified T> getElementsOfType(list: List<Any>): List<T> {
 
     var newList: MutableList<T> = mutableListOf()
