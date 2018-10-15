@@ -32,6 +32,9 @@ class Rose2: Flower2("Rose")
 class Daffodil: Flower2("Daffodil")
 
 // Making FlowerCare Contravariant by adding the in keyword.
+// Making an object contravariant means you can now only write a parameter, not read it. If you didn't have this
+// restriction, you would be able to treat a superclass like its subclass and that's not always the case (e.g., a
+// Daffodil is always a Flower, but a Flower is not always a Daffodil).
 interface FlowerCare<in T> {
     fun prune(flower: T)
 }
