@@ -12,3 +12,5 @@ fun convertToInt(collection: MutableList<Number>) {
 }
 
 open class Flower
+
+class Garden<T: Flower> 
