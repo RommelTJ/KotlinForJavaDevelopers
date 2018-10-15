@@ -15,4 +15,6 @@ fun waterGarden(garden: Garden<Flower>) {  }
 
 open class Flower
 
+class Rose: Flower()
+
 class Garden<T: Flower>
