@@ -20,6 +20,8 @@ class Garden2<T: Flower>(val flowers: List<T>, val flowerCare: FlowerCare<T>) {
 
 }
 
+class Daffodil: Flower() 
+
 interface FlowerCare<T> {
     fun prune(flower: T)
 }
