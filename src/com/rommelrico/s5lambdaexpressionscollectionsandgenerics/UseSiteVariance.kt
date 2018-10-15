@@ -18,10 +18,13 @@ fun main(args: Array<String>) {
 
     // This is ok because Car is a supertype.
     val cars3: MutableList<Car2> = mutableListOf(Ford(), Ford())
+    copyCars(fords1, cars2)
+    println(cars2)
 
 }
 
-fun <T> copyCars(source: MutableList<T>, destination: MutableList<T>) {
+// Sample Use-site variance. Source is not written, only read. Destination is not read, only written.
+fun <T: Car2> copyCars(source: MutableList<out T>, destination: MutableList<in T>) {
     for (car in source) {
         destination.add(car)
     }
