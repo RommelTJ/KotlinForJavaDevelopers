@@ -32,6 +32,4 @@ fun <T: Car2> copyCars(source: MutableList<out T>, destination: MutableList<T>) 
 
 open class Car2
 
-class Toyota: Car2()
-
 class Ford: Car2()
