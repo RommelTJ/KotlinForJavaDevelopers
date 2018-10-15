@@ -16,6 +16,9 @@ fun main(args: Array<String>) {
     copyCars(fords1, fords2)
     // copyCars(fords1, cars2) // Type inference failed.
 
+    // This is ok because Car is a supertype.
+    val cars3: MutableList<Car2> = mutableListOf(Ford(), Ford())
+
 }
 
 fun <T> copyCars(source: MutableList<T>, destination: MutableList<T>) {
