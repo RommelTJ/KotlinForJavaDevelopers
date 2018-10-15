@@ -6,6 +6,7 @@ fun main(args: Array<String>) {
         override fun prune(flower: Rose) = println("I'm pruning a rose!")
     }
     val roseGarden2 = Garden2<Rose>(listOf(Rose(), Rose()), roseTender)
+    roseGarden2.tendFlower(0)
 
 }
 
