@@ -7,16 +7,10 @@ fun main(args: Array<String>) {
         override fun prune(flower: Flower2) = println("I'm tending a ${flower.name}!")
     }
 
-    val roseTender = object: FlowerCare<Rose> {
-        override fun prune(flower: Rose) = println("I'm pruning a rose!")
-    }
-    val roseGarden2 = Garden2<Rose2>(listOf(Rose2(), Rose2()), roseTender)
+    val roseGarden2 = Garden2(listOf(Rose2(), Rose2()), flowerTender)
     roseGarden2.tendFlower(0)
 
-    val daffodilTender = object: FlowerCare<Daffodil> {
-        override fun prune(flower: Daffodil) = println("I'm pruning a daffodil!")
-    }
-    val daffodilGarden = Garden2<Daffodil>(listOf(Daffodil(), Daffodil(), Daffodil()), daffodilTender)
+    val daffodilGarden = Garden2(listOf(Daffodil(), Daffodil(), Daffodil()), flowerTender)
     daffodilGarden.tendFlower(2)
 
 }
