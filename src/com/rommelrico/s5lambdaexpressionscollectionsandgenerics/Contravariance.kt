@@ -8,6 +8,12 @@ fun main(args: Array<String>) {
     val roseGarden2 = Garden2<Rose>(listOf(Rose(), Rose()), roseTender)
     roseGarden2.tendFlower(0)
 
+    val daffodilTender = object: FlowerCare<Daffodil> {
+        override fun prune(flower: Daffodil) = println("I'm pruning a daffodil!")
+    }
+    val daffodilGarden = Garden2<Daffodil>(listOf(Daffodil(), Daffodil(), Daffodil()), daffodilTender)
+    daffodilGarden.tendFlower(2)
+
 }
 
 class Garden2<T: Flower>(val flowers: List<T>, val flowerCare: FlowerCare<T>) {
@@ -20,7 +26,7 @@ class Garden2<T: Flower>(val flowers: List<T>, val flowerCare: FlowerCare<T>) {
 
 }
 
-class Daffodil: Flower() 
+class Daffodil: Flower()
 
 interface FlowerCare<T> {
     fun prune(flower: T)
