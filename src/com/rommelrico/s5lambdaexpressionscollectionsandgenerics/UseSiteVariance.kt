@@ -11,9 +11,14 @@ fun main(args: Array<String>) {
 //    val fords2 = mutableListOf<Ford>()
 //    copyCars(fords1, fords2) // Type Mismatch
 
+    val fords1 = mutableListOf(Ford(), Ford())
+    val fords2 = mutableListOf<Ford>()
+    copyCars(fords1, fords2)
+    // copyCars(fords1, cars2) // Type inference failed.
+
 }
 
-fun copyCars(source: MutableList<Car2>, destination: MutableList<Car2>) {
+fun <T> copyCars(source: MutableList<T>, destination: MutableList<T>) {
     for (car in source) {
         destination.add(car)
     }
