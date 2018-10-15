@@ -1,14 +1,17 @@
 package com.rommelrico.s5lambdaexpressionscollectionsandgenerics
 
+import java.math.BigDecimal
+
 fun main(args: Array<String>) {
     val shortList: MutableList<Short> = mutableListOf(1, 2, 3, 4, 5)
-    println(convertToInt(shortList))
+    println(convertToInt(shortList)) // prints only 1, 2, 3, 4, 5, and not BigDecimal(243.356235).
 }
 
 fun convertToInt(collection: MutableList<Number>) {
     for (num in collection) {
         println("${num.toInt()}")
     }
+    collection.add(BigDecimal(243.356235))
 }
 
 fun tendGarden(roseGarden: Garden<Rose>) {
