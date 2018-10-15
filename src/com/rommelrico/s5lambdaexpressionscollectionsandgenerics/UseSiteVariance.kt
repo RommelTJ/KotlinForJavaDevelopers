@@ -24,7 +24,7 @@ fun main(args: Array<String>) {
 }
 
 // Sample Use-site variance. Source is not written, only read. Destination is not read, only written.
-fun <T: Car2> copyCars(source: MutableList<out T>, destination: MutableList<in T>) {
+fun <T: Car2> copyCars(source: MutableList<out T>, destination: MutableList<T>) {
     for (car in source) {
         destination.add(car)
     }
