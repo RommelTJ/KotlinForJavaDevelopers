@@ -10,3 +10,5 @@ fun convertToInt(collection: MutableList<Number>) {
         println("${num.toInt()}")
     }
 }
+
+open class Flower
