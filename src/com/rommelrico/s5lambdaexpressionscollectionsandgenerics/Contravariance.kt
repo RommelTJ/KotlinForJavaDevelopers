@@ -33,6 +33,7 @@ class Garden2<T: Flower>(val flowers: List<T>, val flowerCare: FlowerCare<T>) {
 
 class Daffodil: Flower()
 
-interface FlowerCare<T> {
+// Making FlowerCare Contravariant by adding the in keyword.
+interface FlowerCare<in T> {
     fun prune(flower: T)
 }
