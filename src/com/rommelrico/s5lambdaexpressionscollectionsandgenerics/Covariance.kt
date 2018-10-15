@@ -28,4 +28,8 @@ class Rose: Flower()
 class Garden<out T: Flower> {
     val flowers: List<T> = listOf()
     fun pickFlower(i: Int): T = flowers[i]
+
+    // Cannot do this because T is now an out-position.
+    // fun plantFlower(flower: T) {}
+
 }
