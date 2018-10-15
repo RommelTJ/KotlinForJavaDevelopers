@@ -18,7 +18,7 @@ fun main(args: Array<String>) {
 
     // This is ok because Car is a supertype.
     val cars3: MutableList<Car2> = mutableListOf(Ford(), Ford())
-    copyCars(fords1, cars2)
+    copyCars(fords1, cars2) // this is now ok because of use-site variance.
     println(cars2)
 
 }
