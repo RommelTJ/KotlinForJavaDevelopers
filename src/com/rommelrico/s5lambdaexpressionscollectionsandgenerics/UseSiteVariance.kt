@@ -2,6 +2,10 @@ package com.rommelrico.s5lambdaexpressionscollectionsandgenerics
 
 fun main(args: Array<String>) {
 
+    val cars1 = mutableListOf(Car2(), Car2())
+    val cars2 = mutableListOf<Car2>()
+    copyCars(cars1, cars2)
+
 }
 
 fun copyCars(source: MutableList<Car2>, destination: MutableList<Car2>) {
