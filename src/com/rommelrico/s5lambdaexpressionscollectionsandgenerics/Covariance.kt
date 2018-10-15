@@ -12,7 +12,8 @@ fun convertToInt(collection: MutableList<Number>) {
 }
 
 fun tendGarden(roseGarden: Garden<Rose>) {
-    waterGarden(roseGarden) // can't do this because Garden is invariant.
+    // waterGarden(roseGarden) // can't do this because Garden is invariant.
+    waterGarden(roseGarden) // This is now ok.
 }
 
 fun waterGarden(garden: Garden<Flower>) {  }
@@ -22,4 +23,6 @@ open class Flower
 class Rose: Flower()
 
 // This class is invariant.
-class Garden<T: Flower>
+// You make a variable covariant by adding the 'out' keyword.
+// You can only use it in the out position.
+class Garden<out T: Flower>
