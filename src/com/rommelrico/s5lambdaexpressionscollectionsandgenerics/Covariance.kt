@@ -25,4 +25,7 @@ class Rose: Flower()
 // This class is invariant.
 // You make a variable covariant by adding the 'out' keyword.
 // You can only use it in the out position.
-class Garden<out T: Flower>
+class Garden<out T: Flower> {
+    val flowers: List<T> = listOf()
+    fun pickFlower(i: Int): T = flowers[i]
+}
