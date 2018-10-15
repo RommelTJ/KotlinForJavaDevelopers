@@ -10,7 +10,13 @@ fun main(args: Array<String>) {
 }
 
 class Garden2<T: Flower>(val flowers: List<T>, val flowerCare: FlowerCare<T>) {
+
     fun pickFlower(i: Int) = flowers[i]
+
+    fun tendFlower(i: Int) {
+        flowerCare.prune(flowers[i])
+    }
+
 }
 
 interface FlowerCare<T> {
