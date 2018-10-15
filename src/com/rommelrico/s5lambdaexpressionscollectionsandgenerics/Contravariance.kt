@@ -1,5 +1,6 @@
 package com.rommelrico.s5lambdaexpressionscollectionsandgenerics
 
+// Contravariance is opposite of Covariance. It means accepting all subclasses, vs preserving the type.
 fun main(args: Array<String>) {
 
     val flowerTender = object: FlowerCare<Flower> {
