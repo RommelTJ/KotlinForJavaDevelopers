@@ -6,6 +6,11 @@ fun main(args: Array<String>) {
     val cars2 = mutableListOf<Car2>()
     copyCars(cars1, cars2)
 
+    // Can't do this because Fords != Car2.
+//    val fords1 = mutableListOf(Ford(), Ford())
+//    val fords2 = mutableListOf<Ford>()
+//    copyCars(fords1, fords2) // Type Mismatch
+
 }
 
 fun copyCars(source: MutableList<Car2>, destination: MutableList<Car2>) {
