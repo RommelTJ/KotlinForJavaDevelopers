@@ -39,3 +39,11 @@ fun main(args: Array<String>) {
     println(list3)
 
 }
+
+class Box<T>
+
+open class Paper
+
+class Regular: Paper()
+
+class Premium: Paper()
