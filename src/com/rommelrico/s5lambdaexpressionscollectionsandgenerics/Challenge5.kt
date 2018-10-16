@@ -21,5 +21,8 @@ fun main(args: Array<String>) {
             "Adams" to john,
             "Smithson" to jean
     )
-    
+
+    // Challenge 3
+    println(immutableMap.filter { it.value.lastName.startsWith('S') }.count())
+
 }
