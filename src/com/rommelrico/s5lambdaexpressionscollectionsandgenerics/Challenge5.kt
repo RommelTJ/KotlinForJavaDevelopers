@@ -9,7 +9,17 @@ fun main(args: Array<String>) {
     val mary = Person("Mary", "Wilson", 70)
     val john = Person("John", "Adams", 32)
     val jean = Person("Jean", "Smithson", 66)
-    
+
     val (fName, lName, age) = joe
     println("fName = $fName, lName = $lName, age = $age")
+
+    // Challenge 2
+    val immutableMap = mapOf(
+            "Jones" to joe,
+            "Smith" to jane,
+            "Wilson" to mary,
+            "Adams" to john,
+            "Smithson" to jean
+    )
+    
 }
