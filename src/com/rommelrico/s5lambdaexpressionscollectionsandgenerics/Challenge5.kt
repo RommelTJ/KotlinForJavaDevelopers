@@ -38,9 +38,14 @@ fun main(args: Array<String>) {
     val list3 = list1.intersect(list2)
     println(list3)
 
+    // Challenge 7 - Covariance.
+    val regularPaper = Box<Regular>()
+    var paper = Box<Paper>()
+    paper = regularPaper
+
 }
 
-class Box<T>
+class Box<out T>
 
 open class Paper
 
