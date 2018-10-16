@@ -25,4 +25,8 @@ fun main(args: Array<String>) {
     // Challenge 3
     println(immutableMap.filter { it.value.lastName.startsWith('S') }.count())
 
+    // Challenge 4
+    val namePairs = immutableMap.map { Pair(it.value.firstName, it.value.lastName) }
+    println(namePairs)
+
 }
