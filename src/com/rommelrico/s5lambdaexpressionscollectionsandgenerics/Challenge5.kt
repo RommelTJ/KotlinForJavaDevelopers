@@ -29,4 +29,7 @@ fun main(args: Array<String>) {
     val namePairs = immutableMap.map { Pair(it.value.firstName, it.value.lastName) }
     println(namePairs)
 
+    // Challenge 5
+    immutableMap.also { it.map { println("${it.value.firstName} is ${it.value.age}") } }
+
 }
