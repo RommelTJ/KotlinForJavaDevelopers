@@ -32,4 +32,10 @@ fun main(args: Array<String>) {
     // Challenge 5
     immutableMap.also { it.map { println("${it.value.firstName} is ${it.value.age}") } }
 
+    // Challenge 6
+    val list1 = listOf(1, 4, 9, 15, 33)
+    val list2 = listOf(4, 55, -83, 22, 101, 15)
+    val list3 = list1.intersect(list2)
+    println(list3)
+
 }
