@@ -12,8 +12,8 @@ fun main(args: Array<String>) {
     println(lines2)
     reader.close() // closing the resource.
 
-    // More concise.
-    val lines3 = File("testfile.txt").reader().use { it.readText() }
+    // More concise. Use function will close the reader.
+    val lines3 = File("testfile.txt").bufferedReader().use { it.readText() }
     println(lines3)
 
 }
