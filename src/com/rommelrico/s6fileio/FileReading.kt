@@ -20,4 +20,7 @@ fun main(args: Array<String>) {
     val lines4 = File("testfile.txt").readText()
     println(lines4)
 
+    // Reading a line at a time. Closes the reader for you.
+    File("testfile.txt").reader().forEachLine { println(it) }
+
 }
