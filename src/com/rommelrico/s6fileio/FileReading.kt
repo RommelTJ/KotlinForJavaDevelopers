@@ -16,4 +16,8 @@ fun main(args: Array<String>) {
     val lines3 = File("testfile.txt").bufferedReader().use { it.readText() }
     println(lines3)
 
+    // Using the readText() extension function. Usable up to 2GB files. Closes resource for you.
+    val lines4 = File("testfile.txt").readText()
+    println(lines4)
+
 }
