@@ -5,6 +5,6 @@ import java.io.File
 fun main(args: Array<String>) {
 
     val lines = File("testfile.txt").reader().readLines()
-    println(lines)
+    lines.forEach { println(it) }
 
 }
