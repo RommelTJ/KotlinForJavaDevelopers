@@ -23,4 +23,7 @@ fun main(args: Array<String>) {
     // Reading a line at a time. Closes the reader for you.
     File("testfile.txt").reader().forEachLine { println(it) }
 
+    // More verbose way of doing it. Don't do it.
+    File("testfile.txt").reader().useLines { it.forEach { println(it) } }
+
 }
