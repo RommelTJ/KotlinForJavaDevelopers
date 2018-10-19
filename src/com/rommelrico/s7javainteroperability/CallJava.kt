@@ -8,4 +8,9 @@ fun main(args: Array<String>) {
     car.color = "green"
     println(car)
 
+    var model = car.model
+    println(model)
+    model = null
+    println(model)
+
 }
