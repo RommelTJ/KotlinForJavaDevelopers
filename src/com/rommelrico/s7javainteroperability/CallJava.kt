@@ -13,4 +13,8 @@ fun main(args: Array<String>) {
     model = null
     println(model)
 
+    var model2: String? = car.model
+    println(car)
+    println(model2)
+
 }
