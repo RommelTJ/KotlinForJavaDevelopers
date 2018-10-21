@@ -7,6 +7,7 @@ public class Car {
     private String color;
     private String model;
     private int year;
+    private Object object;
 
     public Car(String color, String model, int year) {
         this.color = color;
@@ -44,6 +45,14 @@ public class Car {
         for (int i: theArray) {
             System.out.println("Here's the int: " + i);
         }
+    }
+
+    public Object getObject() {
+        return object;
+    }
+
+    public void setObject(Object object) {
+        this.object = object;
     }
 
     @Override

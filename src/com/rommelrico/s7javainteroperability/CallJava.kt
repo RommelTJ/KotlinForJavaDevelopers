@@ -25,5 +25,5 @@ fun main(args: Array<String>) {
     // car.wantsIntArray(arrayOf(1, 2, 3)) // Doesn't work because Array<Int> != IntArray.
     car.wantsIntArray(arrayOf(1, 2, 3).toIntArray()) // this works.
     car.wantsIntArray(intArrayOf(4, 5, 6)) // this also works.
-    
+
 }
