@@ -18,12 +18,13 @@ public class Car {
     }
 
     public void demoMethod() {
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("I'm in a thread!");
-            }
-        }).start();
+        new Thread( () -> System.out.println("I'm in a thread 2!")).start();
+//        new Thread(new Runnable() {
+//            @Override
+//            public void run() {
+//                System.out.println("I'm in a thread!");
+//            }
+//        }).start();
     }
 
     public String getColor() {
