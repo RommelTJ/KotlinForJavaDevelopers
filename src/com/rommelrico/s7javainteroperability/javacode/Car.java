@@ -17,6 +17,15 @@ public class Car {
         this.year = year;
     }
 
+    public void demoMethod() {
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("I'm in a thread!");
+            }
+        });
+    }
+
     public String getColor() {
         return color;
     }
