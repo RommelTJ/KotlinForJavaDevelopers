@@ -8,6 +8,10 @@ public class Main {
     public static void main(String[] args) {
         // Calling a top level Kotlin function from the Java Class.
         StaticCar.topLevel();
+
+        // You would call extension functions in the same way.
+        StaticCar.print("Print this Java");
+
     }
 
 }
