@@ -1,3 +1,4 @@
+@file:JvmName("StaticCar")
 package com.rommelrico.s7javainteroperability
 
 fun topLevel() = println("I'm in a KotlinCar file!")
