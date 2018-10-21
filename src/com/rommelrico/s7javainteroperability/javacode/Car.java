@@ -7,7 +7,7 @@ public class Car {
     private String color;
     private String model;
     private int year;
-    private Object object;
+    private Object anObject;
 
     public Car(String color, String model, int year) {
         this.color = color;
@@ -47,12 +47,12 @@ public class Car {
         }
     }
 
-    public Object getObject() {
-        return object;
+    public Object getAnObject() {
+        return anObject;
     }
 
-    public void setObject(Object object) {
-        this.object = object;
+    public void setAnObject(Object anObject) {
+        this.anObject = anObject;
     }
 
     @Override
