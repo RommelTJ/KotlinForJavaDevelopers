@@ -17,6 +17,8 @@ public class Main {
         System.out.println(car.getColor());
         System.out.println(car.getModel());
         System.out.println(car.getYear());
+        car.setColor("purple");
+        System.out.println(car.getColor()); // prints always green.
 
     }
 
