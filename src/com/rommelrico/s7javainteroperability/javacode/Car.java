@@ -17,8 +17,10 @@ public class Car {
         this.year = year;
     }
 
-    public void demoMethod() {
-        new Thread( () -> System.out.println("I'm in a thread 2!")).start();
+    public void demoMethod(Runnable r) {
+        new Thread(r).start();
+
+        // new Thread( () -> System.out.println("I'm in a thread 2!")).start();
 //        new Thread(new Runnable() {
 //            @Override
 //            public void run() {
