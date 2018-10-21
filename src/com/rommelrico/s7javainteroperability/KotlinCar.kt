@@ -7,7 +7,7 @@ fun main(args: Array<String>) {
     "Print this".print()
 }
 
-class KotlinCar(val color: String, val model: String, val year: Int) {
+class KotlinCar(val color: String, @JvmField val model: String, val year: Int) {
 
 //    var color: String = color
 //    set(value) {

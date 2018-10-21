@@ -15,8 +15,10 @@ public class Main {
         // Accessing properties from a Kotlin class in Java.
         KotlinCar car = new KotlinCar("blue", "BMW", 2011);
         System.out.println(car.getColor());
-        System.out.println(car.getModel());
         System.out.println(car.getYear());
+
+        // Adding an annotation to access property directly
+        System.out.println(car.model);
 
         // System.out.println(car.isAutomatic());
         // car.setAutomatic(false);
