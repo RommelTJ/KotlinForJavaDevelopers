@@ -57,6 +57,10 @@ public class Car {
         this.anObject = anObject;
     }
 
+    public static String xString() {
+        return "This is x: " + x++;
+    }
+
     @Override
     public String toString() {
         return "Car{" +
