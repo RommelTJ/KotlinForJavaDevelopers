@@ -40,6 +40,12 @@ public class Car {
         }
     }
 
+    public void wantsIntArray(int[] theArray) {
+        for (int i: theArray) {
+            System.out.println("Here's the int: " + i);
+        }
+    }
+
     @Override
     public String toString() {
         return "Car{" +

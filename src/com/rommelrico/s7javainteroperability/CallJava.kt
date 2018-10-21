@@ -22,4 +22,8 @@ fun main(args: Array<String>) {
     // car.variableMethod(10, strings) // This doesn't work
     car.variableMethod(10, *strings) // Works with the spread operator.
 
+    // car.wantsIntArray(arrayOf(1, 2, 3)) // Doesn't work because Array<Int> != IntArray.
+    car.wantsIntArray(arrayOf(1, 2, 3).toIntArray()) // this works.
+    car.wantsIntArray(intArrayOf(4, 5, 6)) // this also works.
+    
 }
