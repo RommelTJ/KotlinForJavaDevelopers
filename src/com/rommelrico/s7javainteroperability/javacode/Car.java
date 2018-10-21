@@ -4,6 +4,8 @@ import org.jetbrains.annotations.Nullable;
 
 public class Car {
 
+    public static int x = 5;
+
     private String color;
     private String model;
     private int year;

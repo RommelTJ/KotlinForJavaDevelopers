@@ -29,4 +29,6 @@ fun main(args: Array<String>) {
     (car.anObject as java.lang.Object).notify() // Using the Java Object class
     car.anObject.javaClass // equivalent.
 
+    
+
 }
