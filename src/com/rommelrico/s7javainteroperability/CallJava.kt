@@ -18,5 +18,8 @@ fun main(args: Array<String>) {
     println(model2)
 
     car.variableMethod(5, "hello", "goodbye")
+    val strings = arrayOf("hello", "goodbye")
+    // car.variableMethod(10, strings) // This doesn't work
+    car.variableMethod(10, *strings) // Works with the spread operator.
 
 }
