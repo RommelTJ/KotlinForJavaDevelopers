@@ -7,12 +7,12 @@ fun main(args: Array<String>) {
     "Print this".print()
 }
 
-class KotlinCar(color: String, val model: String, val year: Int) {
+class KotlinCar(val color: String, val model: String, val year: Int, val isAutomatic: Boolean) {
 
-    var color: String = color
-    set(value) {
-        field = "always green"
-    }
+//    var color: String = color
+//    set(value) {
+//        field = "always green"
+//    }
 
 }
 

@@ -13,12 +13,14 @@ public class Main {
         StaticCar.print("Print this Java");
 
         // Accessing properties from a Kotlin class in Java.
-        KotlinCar car = new KotlinCar("blue", "BMW", 2011);
+        KotlinCar car = new KotlinCar("blue", "BMW", 2011, true);
         System.out.println(car.getColor());
         System.out.println(car.getModel());
         System.out.println(car.getYear());
-        car.setColor("purple");
-        System.out.println(car.getColor()); // prints always green.
+        System.out.println(car.isAutomatic());
+//        car.setColor("purple");
+//        System.out.println(car.getColor()); // prints always green.
+
 
     }
 
