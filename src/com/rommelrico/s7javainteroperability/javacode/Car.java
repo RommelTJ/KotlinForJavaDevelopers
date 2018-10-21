@@ -34,6 +34,12 @@ public class Car {
         return year;
     }
 
+    public void variableMethod(int num, String... strings) {
+        for (String string: strings) {
+            System.out.println(string);
+        }
+    }
+
     @Override
     public String toString() {
         return "Car{" +

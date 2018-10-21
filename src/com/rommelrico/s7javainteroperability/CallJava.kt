@@ -17,4 +17,6 @@ fun main(args: Array<String>) {
     println(car)
     println(model2)
 
+    car.variableMethod(5, "hello", "goodbye")
+
 }
