@@ -18,6 +18,8 @@ public class Main {
         System.out.println(car.getModel());
         System.out.println(car.getYear());
         System.out.println(car.isAutomatic());
+        car.setAutomatic(false);
+        System.out.println(car.isAutomatic());
 //        car.setColor("purple");
 //        System.out.println(car.getColor()); // prints always green.
 
