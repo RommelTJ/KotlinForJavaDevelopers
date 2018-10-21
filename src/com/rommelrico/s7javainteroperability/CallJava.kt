@@ -34,4 +34,7 @@ fun main(args: Array<String>) {
     println(Car.xString())
     println(Car.xString())
 
+    // Working with anonymous classes in Kotlin.
+    car.demoMethod { println("I'm in a thread 3!") }
+
 }
