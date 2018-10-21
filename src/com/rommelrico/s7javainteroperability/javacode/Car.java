@@ -23,7 +23,7 @@ public class Car {
             public void run() {
                 System.out.println("I'm in a thread!");
             }
-        });
+        }).start();
     }
 
     public String getColor() {
