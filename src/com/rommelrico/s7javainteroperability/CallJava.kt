@@ -27,5 +27,6 @@ fun main(args: Array<String>) {
     car.wantsIntArray(intArrayOf(4, 5, 6)) // this also works.
 
     (car.anObject as java.lang.Object).notify() // Using the Java Object class
+    car.anObject.javaClass // equivalent.
 
 }
