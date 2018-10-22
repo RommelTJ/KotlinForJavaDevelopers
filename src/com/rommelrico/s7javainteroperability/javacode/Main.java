@@ -34,6 +34,7 @@ public class Main {
 
         // System.out.println("isAuto = " + KotlinCar.Companion.isAuto()); // Accessing a private variable in comp. obj.
         System.out.println("isAuto = " + KotlinCar.isAuto); // This works because of @JvmField annotation.
+        System.out.println("isAuto = " + KotlinCar.constant); // You don't have to annotation constants.
 
     }
 
