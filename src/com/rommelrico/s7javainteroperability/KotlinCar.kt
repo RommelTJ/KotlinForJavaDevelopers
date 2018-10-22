@@ -9,6 +9,10 @@ fun main(args: Array<String>) {
     "Print this".print()
 }
 
+@JvmOverloads fun defaultArgs(str: String, num: Int = 25) {
+    println("Str: $str, num: $num")
+}
+
 @Throws(IOException::class)
 fun doIO() {
     throw IOException();

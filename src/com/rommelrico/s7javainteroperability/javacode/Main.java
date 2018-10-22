@@ -50,6 +50,10 @@ public class Main {
             e.printStackTrace();
         }
 
+        // Working with Default parameter values with @JvmOverloads annotation.
+        StaticCar.defaultArgs("Hello", 3);
+        StaticCar.defaultArgs("Test");
+
     }
 
 }
