@@ -23,3 +23,7 @@ class KotlinCar(val color: String, @JvmField val model: String, val year: Int) {
 fun String.print() {
     println(this)
 }
+
+object SingletonObj {
+    fun doSomething() = println("I'm doing something in the Singleton object.")
+}
