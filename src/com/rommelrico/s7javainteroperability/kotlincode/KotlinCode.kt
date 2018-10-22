@@ -15,9 +15,8 @@ object Challenge {
 class Employee(val firstName: String, val lastName: String, var startYear: Int) {
 // class Employee(val firstName: String, val lastName: String, @JvmField var startYear: Int) {
 
+    @JvmOverloads
     fun takesDefault(parm1: String, parm2: String = "default") {
-    // @JvmOverloads
-    // fun takesDefault(parm1: String, parm2: String = "default") {
         println("$parm1 and $parm2")
     }
 

@@ -22,6 +22,9 @@ public class Challenge7Java {
         employee.setStartYear(2009);
         Challenge.INSTANCE.doMath(5, 4);
 
+        // Part 4. Throwing an IllegalArgumentException.
+        employee.takesDefault(null);
+
     }
 
 }
