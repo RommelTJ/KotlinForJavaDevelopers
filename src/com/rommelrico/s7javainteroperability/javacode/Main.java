@@ -39,6 +39,9 @@ public class Main {
         // Passing a null value to a non-null method in Kotlin.
         // car.printMe(null); // Generates IllegalArgumentException.
 
+        // Throwing an IOException.
+        StaticCar.doIO();
+
     }
 
 }

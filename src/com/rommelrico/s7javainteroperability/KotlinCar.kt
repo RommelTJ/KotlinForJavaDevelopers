@@ -1,10 +1,16 @@
 @file:JvmName("StaticCar")
 package com.rommelrico.s7javainteroperability
 
+import java.io.IOException
+
 fun topLevel() = println("I'm in a KotlinCar file!")
 
 fun main(args: Array<String>) {
     "Print this".print()
+}
+
+fun doIO() {
+    throw IOException();
 }
 
 class KotlinCar(val color: String, @JvmField val model: String, val year: Int) {
