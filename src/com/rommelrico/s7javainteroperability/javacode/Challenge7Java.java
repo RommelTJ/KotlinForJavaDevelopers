@@ -23,8 +23,6 @@ public class Challenge7Java {
 
         Challenge.doMath(5, 4);
 
-        employee.takesDefault("arg1");
-
     }
 
 }
