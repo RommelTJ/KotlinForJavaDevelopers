@@ -32,6 +32,8 @@ public class Main {
         SingletonObj.INSTANCE.doSomething(); // Instance is the single instance of the object class.
         SingletonObj.doSomething(); // This works because we added the @JvmStatic annotation.
 
+        System.out.println("isAuto = " + KotlinCar.Companion.isAuto()); // Accessing a private variable in comp. obj.
+
     }
 
 }
