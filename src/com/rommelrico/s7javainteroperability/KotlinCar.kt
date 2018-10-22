@@ -9,6 +9,7 @@ fun main(args: Array<String>) {
     "Print this".print()
 }
 
+@Throws(IOException::class)
 fun doIO() {
     throw IOException();
 }

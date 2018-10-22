@@ -1,7 +1,11 @@
 package com.rommelrico.s7javainteroperability.javacode;
 
 // Notice the 'Kt' at the end of the import.
-import com.rommelrico.s7javainteroperability.*;
+import com.rommelrico.s7javainteroperability.KotlinCar;
+import com.rommelrico.s7javainteroperability.SingletonObj;
+import com.rommelrico.s7javainteroperability.StaticCar;
+
+import java.io.IOException;
 
 public class Main {
 
@@ -39,8 +43,12 @@ public class Main {
         // Passing a null value to a non-null method in Kotlin.
         // car.printMe(null); // Generates IllegalArgumentException.
 
-        // Throwing an IOException.
-        StaticCar.doIO(); // Java doesn't know the exception is thrown, so you cannot catch it.
+        // Throwing an IOException. Adding the @Throws annotation in Kotlin allows you to catch this.
+        try {
+            StaticCar.doIO(); // Java doesn't know the exception is thrown, so you cannot catch it.
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
 
     }
 
