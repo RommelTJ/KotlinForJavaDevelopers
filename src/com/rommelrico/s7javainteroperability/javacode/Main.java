@@ -40,7 +40,7 @@ public class Main {
         // car.printMe(null); // Generates IllegalArgumentException.
 
         // Throwing an IOException.
-        StaticCar.doIO();
+        StaticCar.doIO(); // Java doesn't know the exception is thrown, so you cannot catch it.
 
     }
 
