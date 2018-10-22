@@ -20,6 +20,10 @@ class KotlinCar(val color: String, @JvmField val model: String, val year: Int) {
         @JvmStatic fun carComp() = println("I'm in KotlinCar's companion object!")
     }
 
+    fun printMe(text: String) {
+        println("I don't expect a null value: $text")
+    }
+
 }
 
 fun String.print() {

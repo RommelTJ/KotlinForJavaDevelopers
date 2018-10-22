@@ -36,6 +36,9 @@ public class Main {
         System.out.println("isAuto = " + KotlinCar.isAuto); // This works because of @JvmField annotation.
         System.out.println("isAuto = " + KotlinCar.constant); // You don't have to annotation constants.
 
+        // Passing a null value to a non-null method in Kotlin.
+        // car.printMe(null); // Generates IllegalArgumentException.
+
     }
 
 }
