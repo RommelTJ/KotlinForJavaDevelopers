@@ -26,6 +26,7 @@ public class Main {
 //        car.setColor("purple");
 //        System.out.println(car.getColor()); // prints always green.
 
+        KotlinCar.Companion.carComp();
 
     }
 
