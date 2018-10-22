@@ -29,6 +29,8 @@ public class Main {
         KotlinCar.Companion.carComp();
         KotlinCar.carComp(); // This works because we added the @JvmStatic annotation.
 
+        SingletonObj.INSTANCE.doSomething(); // Instance is the single instance of the object class.
+
     }
 
 }
