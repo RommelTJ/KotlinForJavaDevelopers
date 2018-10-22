@@ -1,7 +1,8 @@
 package com.rommelrico.s7javainteroperability.javacode;
 
-import com.rommelrico.s7javainteroperability.kotlincode.*;
+import com.rommelrico.s7javainteroperability.kotlincode.Challenge;
 import com.rommelrico.s7javainteroperability.kotlincode.Employee;
+import com.rommelrico.s7javainteroperability.kotlincode.KotlinStuff;
 
 public class Challenge7Java {
 
