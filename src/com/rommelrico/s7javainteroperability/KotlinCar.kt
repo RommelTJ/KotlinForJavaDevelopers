@@ -25,5 +25,5 @@ fun String.print() {
 }
 
 object SingletonObj {
-    fun doSomething() = println("I'm doing something in the Singleton object.")
+    @JvmStatic fun doSomething() = println("I'm doing something in the Singleton object.")
 }
