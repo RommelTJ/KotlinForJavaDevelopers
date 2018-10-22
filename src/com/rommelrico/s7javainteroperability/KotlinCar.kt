@@ -15,7 +15,7 @@ class KotlinCar(val color: String, @JvmField val model: String, val year: Int) {
 //    }
 
     companion object {
-        fun carComp() = println("I'm in KotlinCar's companion object!")
+        @JvmStatic fun carComp() = println("I'm in KotlinCar's companion object!")
     }
 
 }

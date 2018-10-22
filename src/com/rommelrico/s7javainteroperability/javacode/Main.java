@@ -27,6 +27,7 @@ public class Main {
 //        System.out.println(car.getColor()); // prints always green.
 
         KotlinCar.Companion.carComp();
+        KotlinCar.carComp(); // This works because we added the @JvmStatic annotation.
 
     }
 
